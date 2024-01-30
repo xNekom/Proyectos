@@ -1,0 +1,73 @@
+
+i
+java:S1192""SDefine a constant instead of duplicating this literal "Historial del J1: " 5 times.(ÀÊÇÊ
+h
+java:S1192*"SDefine a constant instead of duplicating this literal "Historial del J2: " 5 times.(­ÁÒY
+I
+java:S1121s".Extract the assignment out of this expression.(š„ŒÕûÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+?	java:S106"+Replace this use of System.out by a logger.(ˆÛæQ
+@	java:S106	"+Replace this use of System.out by a logger.(¬«Ö
+@	java:S106"+Replace this use of System.out by a logger.(×ÛùŞ
+E	java:S106"+Replace this use of System.out by a logger.(½Ó÷üÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(®¼Ş…
+@	java:S106"+Replace this use of System.out by a logger.(­²¯ç
+@	java:S106"+Replace this use of System.out by a logger.(ˆŠ·
+E
+java:S1197"*Move the array designators [] to the type.(Ë‚Â³úÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(íòì½
+E
+java:S1197 "*Move the array designators [] to the type.(´Íû©ıÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(ÀÊÇÊ
+E	java:S106#"+Replace this use of System.out by a logger.(›í®ûÿÿÿÿ
+E	java:S106&"+Replace this use of System.out by a logger.(ê¼¨èıÿÿÿÿ
+@
+java:S1197("*Move the array designators [] to the type.(…øç…
+?	java:S106*"+Replace this use of System.out by a logger.(­ÁÒY
+E	java:S106+"+Replace this use of System.out by a logger.(ëşœÚøÿÿÿÿ
+E	java:S1063"+Replace this use of System.out by a logger.(Á¼½¹ÿÿÿÿÿ
+@	java:S1064"+Replace this use of System.out by a logger.(ÀÊÇÊ
+E	java:S1065"+Replace this use of System.out by a logger.(›í®ûÿÿÿÿ
+?	java:S1066"+Replace this use of System.out by a logger.(­ÁÒY
+E	java:S1067"+Replace this use of System.out by a logger.(ëşœÚøÿÿÿÿ
+@	java:S1069"+Replace this use of System.out by a logger.(ÑÎÒ£
+@	java:S106:"+Replace this use of System.out by a logger.(ÀÊÇÊ
+E	java:S106;"+Replace this use of System.out by a logger.(›í®ûÿÿÿÿ
+?	java:S106<"+Replace this use of System.out by a logger.(­ÁÒY
+E	java:S106="+Replace this use of System.out by a logger.(ëşœÚøÿÿÿÿ
+E	java:S106?"+Replace this use of System.out by a logger.(ÊöÁƒùÿÿÿÿ
+@	java:S106@"+Replace this use of System.out by a logger.(ÀÊÇÊ
+E	java:S106A"+Replace this use of System.out by a logger.(›í®ûÿÿÿÿ
+?	java:S106B"+Replace this use of System.out by a logger.(­ÁÒY
+E	java:S106C"+Replace this use of System.out by a logger.(ëşœÚøÿÿÿÿ
+E	java:S106E"+Replace this use of System.out by a logger.(º»Ğ‹ÿÿÿÿÿ
+@	java:S106F"+Replace this use of System.out by a logger.(ÀÊÇÊ
+E	java:S106G"+Replace this use of System.out by a logger.(›í®ûÿÿÿÿ
+?	java:S106H"+Replace this use of System.out by a logger.(­ÁÒY
+E	java:S106I"+Replace this use of System.out by a logger.(ëşœÚøÿÿÿÿ
+E	java:S106K"+Replace this use of System.out by a logger.(å™³¦ÿÿÿÿÿ
+V	java:S125J"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+E
+java:S1197Q"*Move the array designators [] to the type.(ÌÃ÷Õüÿÿÿÿ
+Q	java:S125V"<This block of commented-out lines of code should be removed.(ãÃ†Ë
+[
+java:S1854r"@Remove this useless assignment to local variable "noEncontrado".(å–ºƒşÿÿÿÿ
+[
+java:S1854s"@Remove this useless assignment to local variable "noEncontrado".(š„ŒÕûÿÿÿÿ
+[
+java:S1854v"@Remove this useless assignment to local variable "noEncontrado".(Şœ½²ıÿÿÿÿ
+L
+java:S1481\"1Remove this unused "noEncontrado" local variable.(å“óûıÿÿÿÿ
+@
+java:S1197_"*Move the array designators [] to the type.(“¬ƒş
+E
+java:S1197`"*Move the array designators [] to the type.(½œë›ÿÿÿÿÿ
+@	java:S106o"+Replace this use of System.out by a logger.(Ú¡ÙË
+E	java:S106p"+Replace this use of System.out by a logger.(òÇõ×øÿÿÿÿ
+4
+java:S2178s"Correct this "&" to "&&".(š„ŒÕûÿÿÿÿ
+E	java:S106~"+Replace this use of System.out by a logger.(ñ´£¥ÿÿÿÿÿ
+W	java:S125‚"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+F	java:S106…"+Replace this use of System.out by a logger.(ÄµåÓûÿÿÿÿ

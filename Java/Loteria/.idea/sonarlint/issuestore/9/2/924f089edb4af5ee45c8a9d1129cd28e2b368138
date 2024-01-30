@@ -1,0 +1,26 @@
+
+7
+java:S1220""Move this file to a named package.8Ğ¤àÕ1
+F	java:S106"+Replace this use of System.out by a logger.(ÛÊ½X8­‡¤àÕ1
+G
+java:S1197	"*Move the array designators [] to the type.(¥–îÂ8®‡¤àÕ1
+G
+java:S1197
+"*Move the array designators [] to the type.(ş»™Ø8¯‡¤àÕ1
+G	java:S106"+Replace this use of System.out by a logger.(µÒ­ˆ8°‡¤àÕ1
+L	java:S106"+Replace this use of System.out by a logger.(é“Ìàşÿÿÿÿ8±‡¤àÕ1
+G	java:S106"+Replace this use of System.out by a logger.(È»¬Ü8²‡¤àÕ1
+G
+java:S1197"*Move the array designators [] to the type.(Ü°—ş8³‡¤àÕ1
+E
+java:S2140")Use "java.util.Random.nextInt()" instead.(Ø l8³‡¤àÕ1
+L
+java:S1197"*Move the array designators [] to the type.(ÓÛí·ùÿÿÿÿ8´‡¤àÕ1
+G
+java:S1197&"*Move the array designators [] to the type.(±Ú£ó8·‡¤àÕ1
+G
+java:S1197&"*Move the array designators [] to the type.(±Ú£ó8·‡¤àÕ1
+G	java:S106("+Replace this use of System.out by a logger.(Ø²‰8¸‡¤àÕ1
+L	java:S106*"+Replace this use of System.out by a logger.(¥ÒÈûÿÿÿÿ8¸‡¤àÕ1
+L	java:S106,"+Replace this use of System.out by a logger.(ô¤ºıÿÿÿÿ8¹‡¤àÕ1
+L	java:S106."+Replace this use of System.out by a logger.(ÍÚÉñøÿÿÿÿ8¹‡¤àÕ1
