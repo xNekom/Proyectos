@@ -1,0 +1,27 @@
+#contador {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 20px;
+  color: #FF5733;
+  text-align: center;
+}
+
+#boton-sumar, #boton-restar {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FF5733;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #FFF; 
+  transition: background-color 0.3s ease;
+}
+
+#boton-sumar:hover, #boton-restar:hover {
+  background-color: #FF5733;
+  color: #FFF;
+}
