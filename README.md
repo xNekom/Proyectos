@@ -17,7 +17,30 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 
 ## HTML, CSS y JavaScript 🌐💻
 
-1. **Formulario Web Estándar** 📄: Un formulario web básico creado con HTML, estilizado con CSS y con funcionalidad interactiva implementada en JavaScript.
+### 1. Lista de la Compra 🛒
+
+- **Descripción**: Una aplicación simple que permite al usuario agregar, leer, actualizar y eliminar elementos de una lista de compras. Puedes utilizar esta aplicación para llevar un registro de los artículos que necesitas comprar.
+- **Funcionalidades**:
+    - Agregar un elemento a la lista.
+    - Ver la lista actual de elementos.
+    - Eliminar un artículo de la lista.
+
+### 2. Contador de Clicks 🖱️
+
+- **Descripción**: Un contador de clicks que registra la cantidad de veces que un usuario hace clic en un botón o enlace. Útil para medir la interacción de los usuarios con tu contenido.
+- **Funcionalidades**:
+    - Contar la cantidad de clicks.
+    - Añadir o restar el número de clicks.
+
+### 3. Formulario Web Estándar 📝
+
+- **Descripción**: Un formulario básico que permite a los usuarios ingresar información y enviarla a un servidor. Puedes personalizarlo según tus necesidades.
+- **Campos**:
+    - Nombre
+    - Email
+    - Contraseña
+    - Mensaje
+    - Género
 
 ## Java ☕
 
