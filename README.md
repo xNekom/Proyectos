@@ -6,13 +6,13 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 
 1. **Aplicación de Notas** 📝: Una aplicación de consola que permite a los usuarios registrarse, iniciar sesión y guardar sus notas en una base de datos.
 
-2. Snake (juego) 🐍: El clásico juego de la serpiente en el que controlas una serpiente que debe comer manzanas para crecer y evitar chocar contra las paredes o su propio cuerpo.
+2. **Snake (juego)** 🐍: El clásico juego de la serpiente en el que controlas una serpiente que debe comer manzanas para crecer y evitar chocar contra las paredes o su propio cuerpo.
 
 3. **Piedra, Papel o Tijera (juego)** ✊✋✌️: Un juego simple en el que dos jugadores eligen entre piedra, papel o tijera, y se determina quién gana según las reglas del juego.
 
 4. **Generador de Contraseñas** 🔐: Un programa que genera contraseñas aleatorias con diferentes niveles de complejidad (longitud, caracteres especiales, números, etc.).
 
-5. **Tic Tac Toe (juego)** 🎮: El clásico juego de tres en línea en el que dos jugadores alternan turnos para marcar casillas en un tablero 3x3. El objetivo es lograr una línea horizontal, vertical o diagonal de sus símbolos (X o O).
+5. **Tic Tac Toe (juego)** 🎮: El clásico juego de tres en raya en el que dos jugadores alternan turnos para marcar casillas en un tablero 3x3. El objetivo es lograr una línea horizontal, vertical o diagonal de sus símbolos (X o O).
 
 
 ## HTML, CSS y JavaScript 🌐💻
