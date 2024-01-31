@@ -17,20 +17,20 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 
 ## HTML, CSS y JavaScript 🌐💻
 
-2. **Formulario Web Estándar** 📄: Un formulario web básico creado con HTML, estilizado con CSS y con funcionalidad interactiva implementada en JavaScript.
+1. **Formulario Web Estándar** 📄: Un formulario web básico creado con HTML, estilizado con CSS y con funcionalidad interactiva implementada en JavaScript.
 
 ## Java ☕
 
-3. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
-4. **Calculadora Sencilla** 🧮: Realiza operaciones matemáticas básicas.
-5. **Juego Cámara Secreta** 🔍: Un juego de adivinanza en el que los jugadores deben adivinar un número secreto.
-6. **Aplicación de Campeonato de Programación** 🏆: Gestiona información sobre competiciones de programación y participantes.
-7. **Juego Coliseo Romano** ⚔️: Simula batallas en el antiguo Coliseo Romano.
-8. **Lotería** 🎰: Genera números aleatorios para un sorteo de lotería.
-9. **Juego Mastermind** 🧩: El clásico juego de lógica en el que los jugadores deben adivinar una combinación secreta.
-10. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
-11. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
-12. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
+1. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
+2. **Calculadora Sencilla** 🧮: Realiza operaciones matemáticas básicas.
+3. **Juego Cámara Secreta** 🔍: Un juego de adivinanza en el que los jugadores deben adivinar un número secreto.
+4. **Aplicación de Campeonato de Programación** 🏆: Gestiona información sobre competiciones de programación y participantes.
+5. **Juego Coliseo Romano** ⚔️: Simula batallas en el antiguo Coliseo Romano.
+6. **Lotería** 🎰: Genera números aleatorios para un sorteo de lotería.
+7. **Juego Mastermind** 🧩: El clásico juego de lógica en el que los jugadores deben adivinar una combinación secreta.
+8. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
+9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
+10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
 
 ## Contribución 🙌
 
