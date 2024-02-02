@@ -1,11 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <link rel="stylesheet" href="/Contador/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador con historial y estadísticas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <span id="contador">0</span>
-  <div id="boton-sumar" onclick="sumar()">+</div>
-  <div id="boton-restar" onclick="restar()">-</div>
-  <script src="/Contador/script.js"></script>
+  <h1>Contador</h1>
+  <div id="contador-container">
+    <span id="contador">0</span>
+    <div id="botones">
+      <button id="boton-sumar" onclick="sumar()">+</button>
+      <button id="boton-restar" onclick="restar()">-</button>
+    </div>
+  </div>
+  <div id="historial">
+    <h2>Historial de cambios</h2>
+    <ul id="lista-historial"></ul>
+  </div>
+  <div id="estadisticas">
+    <h2>Estadísticas</h2>
+    <ul>
+      <li>Valor máximo: <span id="maximo"></span></li>
+      <li>Valor mínimo: <span id="minimo"></span></li>
+      <li>Valor promedio: <span id="promedio"></span></li>
+      <li>Tendencia: <span id="tendencia"></span></li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
