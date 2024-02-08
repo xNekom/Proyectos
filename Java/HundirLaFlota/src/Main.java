@@ -42,12 +42,12 @@ public class Main {
         }
     }
 
-    public static void colocarBarcos(char[][] matrizBarcos, int longitudBarco, char simboloBarco) {
+    public static void colocarBarcos(char[][] matrizBarcos, int jugador, int longitudBarco, char simboloBarco) {
         Scanner scanner = new Scanner(System.in);
         int buffer = 2; // Distancia mínima entre barcos
 
         while (true) {
-            System.out.println("Introduzca la coordenada inicial (A1-J10): ");
+            System.out.println("Jugador " + jugador + ", introduce la coordenada inicial (A1-J10): ");
             String coordenada = scanner.nextLine().toLowerCase(); // Convertir a minúsculas
 
             int fila = convertirFilaALetra(coordenada.charAt(0));
@@ -133,9 +133,6 @@ public class Main {
             break;
         }
     }
-
-
-
 
 
     private static int convertirCoordenadaANumero(char numero) throws NumberFormatException {
@@ -294,8 +291,8 @@ public class Main {
                         break;
                 }
 
-                // Coloca el barco en el tablero
-                colocarBarcos(tableroPj1, longitudBarco, simboloBarco);
+                // Coloca el barco en el tablero del jugador actual
+                colocarBarcos(jugador == 1 ? tableroPj1 : tableroPj2, jugador, longitudBarco, simboloBarco);
 
                 // Reduce la disponibilidad del barco colocado
                 barcosDisponiblesPj1[eleccionBarco - 1]--;
