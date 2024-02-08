@@ -1,8 +1,6 @@
-package java_arrays_bidimensionales;
-
 import java.util.Scanner;
 
-public class HundirLaFlota {
+public class Main {
 
     // Rellena una matriz de caracteres con '~'.
     public static void llenarMatrices(char[][] matriz) {

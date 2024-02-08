@@ -1,0 +1,56 @@
+
+z	java:S135N"YReduce the total number of break and continue statements in this loop to use at most one.(Ì¥Ëıÿÿÿÿÿ8–Ç¾ÌØ1
+z	java:S1351"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8—Ç¾ÌØ1
+{	java:S135±"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8—Ç¾ÌØ1
+v	java:S135„"YReduce the total number of break and continue statements in this loop to use at most one.(ş£ƒ8—Ç¾ÌØ1
+Q
+java:S1066d"/Merge this if statement with the enclosing one.(•ºÄÉşÿÿÿÿ8—Ç¾ÌØ1
+7
+java:S1220""Move this file to a named package.8„Î¿ÌØ1
+L	java:S106"+Replace this use of System.out by a logger.(Ç™¯¼úÿÿÿÿ8¯›´ÌØ1
+L	java:S106"+Replace this use of System.out by a logger.(íĞé¶üÿÿÿÿ8°›´ÌØ1
+G	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡8ÄÌ¾ÌØ1
+G	java:S106"+Replace this use of System.out by a logger.(×•œ²8ÄÌ¾ÌØ1
+G	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡8ÅÌ¾ÌØ1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÅÌ¾ÌØ1
+G	java:S106 "+Replace this use of System.out by a logger.(¡Ñú¤8ÅÌ¾ÌØ1
+L	java:S106""+Replace this use of System.out by a logger.(µÜ£Öùÿÿÿÿ8ÆÌ¾ÌØ1
+G	java:S106$"+Replace this use of System.out by a logger.(×•œ²8ÆÌ¾ÌØ1
+G	java:S106%"+Replace this use of System.out by a logger.(¡Ñú¤8ÆÌ¾ÌØ1
+L	java:S106'"+Replace this use of System.out by a logger.(‘ÀŞõüÿÿÿÿ8ÆÌ¾ÌØ1
+L	java:S106)"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÇÌ¾ÌØ1
+t
+java:S3776-"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(í†òÇüÿÿÿÿ8ÇÌ¾ÌØ1
+L	java:S1062"+Replace this use of System.out by a logger.(¦Æ›úÿÿÿÿ8ÍÌ¾ÌØ1
+L	java:S106;"+Replace this use of System.out by a logger.(üƒèòûÿÿÿÿ8ÎÌ¾ÌØ1
+G	java:S106@"+Replace this use of System.out by a logger.(í‹»Ô8ÎÌ¾ÌØ1
+L	java:S106D"+Replace this use of System.out by a logger.(Ìåê‹şÿÿÿÿ8ÏÌ¾ÌØ1
+G	java:S106H"+Replace this use of System.out by a logger.(×Ã‡‘8ÏÌ¾ÌØ1
+G	java:S106v"+Replace this use of System.out by a logger.(ş°ÿö8ĞÌ¾ÌØ1
+H	java:S106²"+Replace this use of System.out by a logger.(™á×’8ÔÌ¾ÌØ1
+M	java:S106¹"+Replace this use of System.out by a logger.(î¤¡êüÿÿÿÿ8ÕÌ¾ÌØ1
+M	java:S106À"+Replace this use of System.out by a logger.(ùÂÜûùÿÿÿÿ8ÕÌ¾ÌØ1
+H	java:S106Â"+Replace this use of System.out by a logger.(Ø¸ÅÈ8ÕÌ¾ÌØ1
+M	java:S106Æ"+Replace this use of System.out by a logger.(Ææ“ˆúÿÿÿÿ8ÕÌ¾ÌØ1
+M	java:S106à"+Replace this use of System.out by a logger.(ÜüÓ±ùÿÿÿÿ8×Ì¾ÌØ1
+u
+java:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÙØ¤Şıÿÿÿÿ8ØÌ¾ÌØ1
+k
+java:S1854ù"HRemove this useless assignment to local variable "barcosDisponiblesPj2".(ÆÍÁúúÿÿÿÿ8ÙÌ¾ÌØ1
+c
+java:S1854Š"@Remove this useless assignment to local variable "colocarBarco".(³¯´ÿÿÿÿÿ8ÙÌ¾ÌØ1
+
+java:S1130æ"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8ÙÌ¾ÌØ1
+\
+java:S1481ù"9Remove this unused "barcosDisponiblesPj2" local variable.(ÆÍÁúúÿÿÿÿ8ÚÌ¾ÌØ1
+M	java:S106ü"+Replace this use of System.out by a logger.(äá‡œøÿÿÿÿ8ÚÌ¾ÌØ1
+H	java:S106ÿ"+Replace this use of System.out by a logger.(½éïà8ÛÌ¾ÌØ1
+H	java:S106†"+Replace this use of System.out by a logger.(„ÑğÒ8ÛÌ¾ÌØ1
+M	java:S106"+Replace this use of System.out by a logger.(âéÚØıÿÿÿÿ8ÛÌ¾ÌØ1
+?	java:S131–""Add a default case to this switch.(ãì¡á8ÜÌ¾ÌØ1
+M	java:S106¸"+Replace this use of System.out by a logger.(ßª¯üÿÿÿÿ8ÜÌ¾ÌØ1
+M	java:S106¾"+Replace this use of System.out by a logger.(ç–Ûöúÿÿÿÿ8İÌ¾ÌØ1
+è
+java:S6541-"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 26 to 14, Nesting Level from 6 to 2, Number of Variables from 21 to 6.(í†òÇüÿÿÿÿ8İÌ¾ÌØ1
+é
+java:S6541æ"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 72 to 64, Complexity from 15 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.(ÙØ¤Şıÿÿÿÿ8İÌ¾ÌØ1
