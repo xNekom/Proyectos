@@ -1,56 +1,45 @@
-let pantalla = document.getElementById("pantalla");
-let primerNumero = "";
-let segundoNumero = "";
-let operadorActual = ""; // Cambio de nombre para evitar colisiones
+let display = document.getElementById('display');
+let currentNumber = '';
+let operator = null;
+let firstOperand = null;
+let waitingForSecondOperand = false;
 
-function numero(numero) {
-    if (operadorActual === "") {
-        primerNumero += numero;
+function appendNumber(number) {
+    if (waitingForSecondOperand) {
+        display.value = number;
+        waitingForSecondOperand = false;
     } else {
-        segundoNumero += numero;
-    }
-    pantalla.value = primerNumero + operadorActual + segundoNumero;
-}
-
-function establecerOperador(operador) { // Cambio de nombre
-    if (primerNumero !== "") {
-        operadorActual = operador;
-        pantalla.value = primerNumero + operadorActual + segundoNumero;
+        display.value = display.value + number;
     }
 }
 
-function punto() {
-    if (operadorActual === "") {
-        if (!primerNumero.includes(".")) {
-            primerNumero += ".";
-        }
-    } else {
-        if (!segundoNumero.includes(".")) {
-            segundoNumero += ".";
-        }
-    }
-    pantalla.value = primerNumero + operadorActual + segundoNumero;
+function appendOperator(op) {
+    if (operator !== null) calculate();
+    firstOperand = parseFloat(display.value);
+    operator = op;
+    waitingForSecondOperand = true;
 }
 
-function igual() {
-    if (primerNumero !== "" && segundoNumero !== "") {
-        switch (operadorActual) {
-            case "+":
-                resultado = parseFloat(primerNumero) + parseFloat(segundoNumero);
-                break;
-            case "-":
-                resultado = parseFloat(primerNumero) - parseFloat(segundoNumero);
-                break;
-            case "*":
-                resultado = parseFloat(primerNumero) * parseFloat(segundoNumero);
-                break;
-            case "/":
-                resultado = parseFloat(primerNumero) / parseFloat(segundoNumero);
-                break;
-        }
-        pantalla.value = resultado;
-        primerNumero = resultado;
-        segundoNumero = "";
-        operadorActual = "";
+function calculate() {
+    let secondOperand = parseFloat(display.value);
+    switch (operator) {
+        case '+':
+            display.value = firstOperand + secondOperand;
+            break;
+        case '-':
+            display.value = firstOperand - secondOperand;
+            break;
+        case '*':
+            display.value = firstOperand * secondOperand;
+            break;
+        case '/':
+            display.value = firstOperand / secondOperand;
+            break;
     }
+    operator = null;
+    waitingForSecondOperand = false;
+}
+
+function clearDisplay() {
+    display.value = '';
 }
