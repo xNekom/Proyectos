@@ -41,6 +41,12 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
     - Contraseña
     - Mensaje
     - Género
+ 
+4. **Calculadora Básica Web** 🧮
+- **Descripción**: Una calculadora simple que permite al usuario realizar operaciones matemáticas básicas en una interfaz web.
+- **Funcionalidades**:
+    - Sumar, restar, multiplicar y dividir dos números.
+    - Mostrar el resultado en la pantalla.
 
 ## Java ☕
 
