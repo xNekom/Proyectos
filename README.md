@@ -41,6 +41,12 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
     - Contraseña
     - Mensaje
     - Género
+ 
+4. **Calculadora Básica Web** 🧮
+- **Descripción**: Una calculadora simple que permite al usuario realizar operaciones matemáticas básicas en una interfaz web.
+- **Funcionalidades**:
+    - Sumar, restar, multiplicar y dividir dos números.
+    - Mostrar el resultado en la pantalla.
 
 ## Java ☕
 
@@ -54,6 +60,7 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 8. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
 9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
 10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
+11. **Hundir la Flota (juego)** 🚢: El clásico juego de estrategia en el que los jugadores deben hundir los barcos del rival en un tablero oculto.
 
 ## Contribución 🙌
 
@@ -71,4 +78,4 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 
 Este proyecto está bajo la **Licencia Pública General de GNU versión 3.0 (GPL-3.0)**. Consulta el archivo LICENSE para más detalles.
 
-¡Gracias por contribuir al proyecto! 🚀👍
+¡Gracias por contribuir al proyecto! 🚀👍.
