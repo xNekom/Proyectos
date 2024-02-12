@@ -13,6 +13,7 @@
     <div id="botones">
       <button id="boton-sumar" onclick="sumar()">+</button>
       <button id="boton-restar" onclick="restar()">-</button>
+      <button id="boton-reset" onclick="reset()">Reset</button>
     </div>
   </div>
   <div id="historial">
@@ -29,5 +30,62 @@
     </ul>
   </div>
   <script src="script.js"></script>
+  <script>
+    // Add your JavaScript code here
+    let contador = 0;
+    let historial = [];
+    let maximo = 0;
+    let minimo = 0;
+    let suma = 0;
+
+    function sumar() {
+      contador++;
+      actualizarContador();
+      actualizarHistorial();
+      actualizarEstadisticas();
+    }
+
+    function restar() {
+      contador--;
+      actualizarContador();
+      actualizarHistorial();
+      actualizarEstadisticas();
+    }
+
+    function reset() {
+      contador = 0;
+      actualizarContador();
+      actualizarHistorial();
+      actualizarEstadisticas();
+    }
+
+    function actualizarContador() {
+      document.getElementById("contador").textContent = contador;
+    }
+
+    function actualizarHistorial() {
+      historial.push(contador);
+      const listaHistorial = document.getElementById("lista-historial");
+      const nuevoItem = document.createElement("li");
+      nuevoItem.textContent = contador;
+      listaHistorial.appendChild(nuevoItem);
+    }
+
+    function actualizarEstadisticas() {
+      if (contador > maximo) {
+        maximo = contador;
+        document.getElementById("maximo").textContent = maximo;
+      }
+      if (contador < minimo) {
+        minimo = contador;
+        document.getElementById("minimo").textContent = minimo;
+      }
+      suma += contador;
+      const promedio = suma / historial.length;
+      document.getElementById("promedio").textContent = promedio.toFixed(2);
+      const tendencia = contador > 0 ? "Positiva" : contador < 0 ? "Negativa" : "Neutral";
+      document.getElementById("tendencia").textContent = tendencia;
+    }
+  </script>
 </body>
 </html>

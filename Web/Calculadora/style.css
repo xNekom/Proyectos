@@ -4,14 +4,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-color: #f0f0f0;
 }
 
 .calculator {
     border: none;
     border-radius: 15px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,25 +38,12 @@ button {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: #1c87c9;
-    color: white;
+    background-color: #f0f0f0;
+    color: #000000;
     box-shadow: 0px 10px 29px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
 }
 
-/*
-body: Estiliza el cuerpo del documento HTML. Se usa flexbox para centrar el contenido, se establece la altura al 100%
-de la altura de la ventana del navegador (100vh), se elimina el margen y se establece un fondo de gradiente lineal.
-
-.calculator: Estiliza el contenedor de la calculadora. Se elimina el borde, se redondean las esquinas, se añade un
-relleno, se establece un color de fondo blanco y se añade una sombra.
-
-#display: Estiliza el display de la calculadora. Se establece el ancho al 100%, la altura a 50px, un margen inferior,
-el texto alineado a la derecha, un relleno a la derecha, el tamaño de la fuente, se redondean las esquinas, se elimina
-el borde y se establece un color de fondo gris claro.
-
-.buttons: Estiliza el contenedor de los botones. Se usa grid para organizar los botones en una cuadrícula de 4 columnas
-con un espacio de 15px entre ellos.
-
-button: Estiliza los botones de la calculadora. Se establece la altura, el tamaño de la fuente, se elimina el borde, se
-redondean las esquinas, se establece un color de fondo azul, el color del texto a blanco y se añade una sombra.
-*/
+button.operation {
+    background-color: #ff9500;
+}

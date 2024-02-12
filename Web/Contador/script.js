@@ -10,6 +10,11 @@ let valorMaximo = 0;
 let valorMinimo = 0;
 let valorPromedio = 0;
 
+// Inicializar el contador al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
+  contador.textContent = 0;
+});
+
 function sumar() {
   let valorActual = parseInt(contador.textContent);
   valorActual++;
@@ -24,7 +29,6 @@ function restar() {
   contador.textContent = valorActual;
   actualizarEstadisticas();
   agregarHistorial("resta");
-  contador.textContent = valorActual;
 }
 
 function actualizarEstadisticas() {
@@ -32,9 +36,8 @@ function actualizarEstadisticas() {
   let cantidad = historial.length;
   valorMaximo = Math.max(...historial);
   valorMinimo = Math.min(...historial);
-  for (let i = 0; i < cantidad; i++) {
-    suma += historial[i];
-  }
+  // Usar el método reduce para sumar los valores del historial
+  suma = historial.reduce((a, b) => a + b, 0);
   valorPromedio = suma / cantidad;
   maximo.textContent = valorMaximo;
   minimo.textContent = valorMinimo;
@@ -53,5 +56,6 @@ function agregarHistorial(tipo) {
   historial.push(valorActual);
   let item = document.createElement("li");
   item.textContent = tipo + ": " + valorActual;
-  listaHistorial.appendChild(item);
+  // Usar el método prepend para añadir el elemento al principio de la lista
+  listaHistorial.prepend(item);
 }
