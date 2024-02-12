@@ -2,322 +2,346 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Rellena una matriz de caracteres con '~'.
-    public static void llenarMatrices(char[][] matriz) {
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
-                matriz[i][j] = '~';
+    // Constantes para el tamaño del tablero y los tipos de barcos
+    public static final int TAM = 10;
+    public static final char PORTAAVIONES = 'P';
+    public static final char ACORAZADO = 'A';
+    public static final char DESTRUCTOR = 'D';
+    public static final char SUBMARINO = 'S';
+    public static final char AGUA = '~';
+    public static final char TOCADO = 'X';
+    public static final char FALLADO = 'O';
+
+    // Variables para almacenar los tableros y las flotas de cada jugador
+    public static char[][] tablero1 = new char[TAM][TAM];
+    public static char[][] tablero2 = new char[TAM][TAM];
+    public static int flota1 = 15; // 5 + 4 + 3 + 3
+    public static int flota2 = 15;
+
+    // Objeto para leer la entrada del teclado
+    public static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        // Inicializar los tableros con agua
+        for (int i = 0; i < TAM; i++) {
+            for (int j = 0; j < TAM; j++) {
+                tablero1[i][j] = AGUA;
+                tablero2[i][j] = AGUA;
             }
+        }
+
+        // Pedir a los jugadores que coloquen sus barcos
+        System.out.println("Jugador 1, coloca tus barcos:");
+        colocarBarcos(tablero1, 1);
+        System.out.println("Jugador 2, coloca tus barcos:");
+        colocarBarcos(tablero2, 2);
+
+        // Variable para alternar el turno de cada jugador
+        boolean turno1 = true;
+
+        // Bucle principal del juego
+        while (flota1 > 0 && flota2 > 0) {
+            // Mostrar el tablero del jugador que tiene el turno
+            if (turno1) {
+                System.out.println("Turno del jugador 1");
+                mostrarTablero(tablero1, true);
+            } else {
+                System.out.println("Turno del jugador 2");
+                mostrarTablero(tablero2, true);
+            }
+
+            // Pedir las coordenadas del disparo al jugador
+            System.out.println("Introduce las coordenadas del disparo (primero la columna y luego la fila):");
+            char columna = sc.next().toUpperCase().charAt(0);
+            int fila = sc.nextInt();
+
+            // Comprobar si las coordenadas son válidas
+            if (columna >= 'A' && columna <= 'J' && fila >= 1 && fila <= 10) {
+                // Convertir la columna a un índice numérico
+                int col = columna - 'A';
+
+                // Restar uno a la fila para ajustarla al índice del array
+                fila--;
+
+                // Comprobar el resultado del disparo según el tablero del otro jugador
+                if (turno1) {
+                    disparar(tablero2, col, fila);
+                } else {
+                    disparar(tablero1, col, fila);
+                }
+
+                // Cambiar el turno si el disparo ha sido agua
+                if (turno1) {
+                    if (tablero2[fila][col] == FALLADO) {
+                        turno1 = false;
+                    }
+                } else {
+                    if (tablero1[fila][col] == FALLADO) {
+                        turno1 = true;
+                    }
+                }
+            } else {
+                // Mostrar un mensaje de error si las coordenadas no son válidas
+                System.out.println("Coordenadas inválidas. Inténtalo de nuevo.");
+            }
+        }
+
+        // Mostrar el resultado final del juego
+        if (flota1 == 0) {
+            System.out.println("¡El jugador 2 ha ganado!");
+        } else {
+            System.out.println("¡El jugador 1 ha ganado!");
         }
     }
 
-    // Imprime los dos tableros de juego en la pantalla.
-    public static void mostrarMatrices(char[][] tableroPj1, char[][] tableroPj2) {
+    // Método para pedir a un jugador que coloque sus barcos en un tablero
+    public static void colocarBarcos(char[][] tablero, int jugador) {
+        // Mostrar el tablero vacío
+        mostrarTablero(tablero, false);
 
-        System.out.println("Tablero jugador 1" + "        \t " + "Tablero jugador 2");
+        // Pedir al jugador que coloque el portaaviones
+        System.out.println("Coloca el portaaviones (ocupa 5 posiciones):");
+        colocarBarco(tablero, PORTAAVIONES, 5);
 
-        // Imprimir los números en la parte superior
-        System.out.print("   "); // Espacios para alinear los números
-        for (int j = 1; j <= 10; j++) {
-            System.out.print(j + " ");
+        // Mostrar el tablero con el portaaviones
+        mostrarTablero(tablero, false);
+
+        // Pedir al jugador que coloque el acorazado
+        System.out.println("Coloca el acorazado (ocupa 4 posiciones):");
+        colocarBarco(tablero, ACORAZADO, 4);
+
+        // Mostrar el tablero con el acorazado
+        mostrarTablero(tablero, false);
+
+        // Pedir al jugador que coloque los dos destructores
+        System.out.println("Coloca el primer destructor (ocupa 3 posiciones):");
+        colocarBarco(tablero, DESTRUCTOR, 3);
+
+        // Mostrar el tablero con el primer destructor
+        mostrarTablero(tablero, false);
+
+        System.out.println("Coloca el segundo destructor (ocupa 3 posiciones):");
+        colocarBarco(tablero, DESTRUCTOR, 3);
+
+        // Mostrar el tablero con los dos destructores
+        mostrarTablero(tablero, false);
+
+        // Pedir al jugador que coloque el submarino
+        System.out.println("Coloca el submarino (ocupa 2 posiciones):");
+        colocarBarco(tablero, SUBMARINO, 2);
+
+        // Mostrar el tablero con el submarino
+        mostrarTablero(tablero, false);
+    }
+
+    // Método para pedir a un jugador que coloque un barco de un tipo y un tamaño dados en un tablero
+    public static void colocarBarco(char[][] tablero, char tipo, int tam) {
+        // Pedir al jugador que introduzca las coordenadas y la orientación del barco
+        System.out.println("Introduce las coordenadas de la casilla inicial del barco (primero la columna y luego la fila):");
+        char columna = sc.next().toUpperCase().charAt(0);
+        int fila = sc.nextInt();
+        System.out.println("Introduce la orientación del barco (0 = horizontal, 1 = vertical):");
+        int orientacion = sc.nextInt();
+
+        // Comprobar si las coordenadas y la orientación son válidas
+        if (columna >= 'A' && columna <= 'J' && fila >= 1 && fila <= 10 && (orientacion == 0 || orientacion == 1)) {
+            // Convertir la columna a un índice numérico
+            int col = columna - 'A';
+
+            // Restar uno a la fila para ajustarla al índice del array
+            fila--;
+
+            // Comprobar si el barco cabe en el tablero según la orientación y las coordenadas
+            boolean cabe = false;
+            if (orientacion == 0) {
+                // Horizontal
+                if (col + tam <= TAM) {
+                    cabe = true;
+                }
+            } else {
+                // Vertical
+                if (fila + tam <= TAM) {
+                    cabe = true;
+                }
+            }
+
+            // Comprobar si el barco no se solapa con otro barco ni está demasiado cerca
+            boolean solapa = false;
+            if (cabe) {
+                if (orientacion == 0) {
+                    // Horizontal
+                    for (int i = col; i < col + tam; i++) {
+                        if (tablero[fila][i] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        // Comprobar las casillas adyacentes
+                        if (fila > 0 && tablero[fila - 1][i] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (fila < TAM - 1 && tablero[fila + 1][i] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (i == col && i > 0 && tablero[fila][i - 1] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (i == col + tam - 1 && i < TAM - 1 && tablero[fila][i + 1] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                    }
+                } else {
+                    // Vertical
+                    for (int i = fila; i < fila + tam; i++) {
+                        if (tablero[i][col] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        // Comprobar las casillas adyacentes
+                        if (col > 0 && tablero[i][col - 1] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (col < TAM - 1 && tablero[i][col + 1] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (i == fila && i > 0 && tablero[i - 1][col] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                        if (i == fila + tam - 1 && i < TAM - 1 && tablero[i + 1][col] != AGUA) {
+                            solapa = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Si el barco cabe y no se solapa, colocarlo en el tablero
+            if (cabe && !solapa) {
+                if (orientacion == 0) {
+                    // Horizontal
+                    for (int i = col; i < col + tam; i++) {
+                        tablero[fila][i] = tipo;
+                    }
+                } else {
+                    // Vertical
+                    for (int i = fila; i < fila + tam; i++) {
+                        tablero[i][col] = tipo;
+                    }
+                }
+                // Mostrar un mensaje de confirmación
+                System.out.println("Has colocado un " + nombreBarco(tipo) + ".");
+            } else {
+                // Si el barco no cabe o se solapa, mostrar un mensaje de error y volver a intentarlo
+                System.out.println("No puedes colocar el barco ahí. Inténtalo de nuevo.");
+                colocarBarco(tablero, tipo, tam);
+            }
+        } else {
+            // Si las coordenadas o la orientación no son válidas, mostrar un mensaje de error y volver a intentarlo
+            System.out.println("Coordenadas u orientación inválidas. Inténtalo de nuevo.");
+            colocarBarco(tablero, tipo, tam);
         }
-        System.out.print("        ");
-        for (int j = 1; j <= 10; j++) {
-            System.out.print(j + " ");
+    }
+
+    // Método para mostrar un tablero por consola
+    public static void mostrarTablero(char[][] tablero, boolean ocultar) {
+        // Mostrar la primera fila con las letras de las columnas
+        System.out.print("  ");
+        for (char c = 'A'; c <= 'J'; c++) {
+            System.out.print(c + " ");
         }
         System.out.println();
 
-        // Imprimir las letras a la izquierda y los tableros
-        for (int i = 0; i < 10; i++) {
-            System.out.print(" " + (char) ('A' + i) + " ");
-            for (int j = 0; j < 10; j++) {
-                System.out.print(tableroPj1[i][j] + " ");
-            }
-            System.out.print("      ");
-            System.out.print(" " + (char) ('A' + i) + " ");
-            for (int j = 0; j < 10; j++) {
-                System.out.print(tableroPj2[i][j] + " ");
+        // Mostrar el resto de filas con los números y el contenido del tablero
+        for (int i = 0; i < TAM; i++) {
+            System.out.print((i + 1) + " "); // Mostrar el número de la fila
+            for (int j = 0; j < TAM; j++) {
+                // Si el tablero se debe mostrar oculto, no mostrar los barcos que no han sido tocados
+                if (ocultar && tablero[i][j] != AGUA && tablero[i][j] != TOCADO && tablero[i][j] != FALLADO) {
+                    System.out.print(AGUA + " ");
+                } else {
+                    System.out.print(tablero[i][j] + " ");
+                }
             }
             System.out.println();
         }
     }
 
-    public static void colocarBarcos(char[][] matrizBarcos, int jugador, int longitudBarco, char simboloBarco) {
-        Scanner scanner = new Scanner(System.in);
-        int buffer = 2; // Distancia mínima entre barcos
-
-        while (true) {
-            System.out.println("Jugador " + jugador + ", introduce la coordenada inicial (A1-J10): ");
-            String coordenada = scanner.nextLine().toLowerCase(); // Convertir a minúsculas
-
-            int fila = convertirFilaALetra(coordenada.charAt(0));
-            int columna;
-
-            try {
-                columna = convertirCoordenadaANumero(coordenada.charAt(1));
-            } catch (NumberFormatException e) {
-                System.out.println("Coordenada no válida. Debe introducir una letra seguida de un número entre 1 y 10.");
-                continue;
-            }
-
-            if (fila < 0 || fila >= matrizBarcos.length || columna < 0 || columna >= matrizBarcos[0].length) {
-                System.out.println("Coordenada no válida. La coordenada debe estar dentro del tablero (A1-J10).");
-                continue;
-            }
-
-            System.out.println("¿Desea colocar el barco verticalmente (H) o horizontalmente (V)?");
-            String orientacion = scanner.nextLine();
-
-            if (!orientacion.equalsIgnoreCase("H") && !orientacion.equalsIgnoreCase("V")) {
-                System.out.println("Orientación no válida. Debe elegir H para vertical o V para horizontal.");
-                continue;
-            }
-
-            boolean espacioLibre = true;
-
-            for (int i = buffer; i < longitudBarco + buffer; i++) {
-                int filaBarco = fila;
-                int columnaBarco = columna;
-
-                if (orientacion.equalsIgnoreCase("V")) {
-                    columnaBarco += i - buffer;
-                } else {
-                    filaBarco += i - buffer;
-                }
-
-                if (filaBarco < 0 || filaBarco >= matrizBarcos.length || columnaBarco < 0 || columnaBarco >= matrizBarcos[0].length) {
-                    espacioLibre = false;
-                    break;
-                }
-
-                // Comprobar casillas adyacentes
-                for (int j = -1; j <= 1; j++) {
-                    for (int k = -1; k <= 1; k++) {
-                        int filaAdyacente = filaBarco + j;
-                        int columnaAdyacente = columnaBarco + k;
-
-                        if (filaAdyacente >= 0 && filaAdyacente < matrizBarcos.length && columnaAdyacente >= 0 && columnaAdyacente < matrizBarcos[0].length) {
-                            if (matrizBarcos[filaAdyacente][columnaAdyacente] != '~') {
-                                espacioLibre = false;
-                                break;
-                            }
-                        }
-                    }
-
-                    if (!espacioLibre) {
-                        break;
-                    }
-                }
-
-                if (!espacioLibre) {
-                    break;
-                }
-            }
-
-            if (!espacioLibre) {
-                System.out.println("No se puede colocar el barco en esa posición. Espacio ocupado o demasiado cerca de otro barco.");
-                continue;
-            }
-
-            for (int i = 0; i < longitudBarco; i++) {
-                int filaBarco = fila;
-                int columnaBarco = columna;
-                if (orientacion.equalsIgnoreCase("H")) {
-                    columnaBarco += i;
-                } else {
-                    filaBarco += i;
-                }
-
-                matrizBarcos[filaBarco][columnaBarco] = simboloBarco;
-            }
-            break;
-        }
-    }
-
-
-    private static int convertirCoordenadaANumero(char numero) throws NumberFormatException {
-        return numero - '1';
-    }
-
-    // Función para convertir una letra a un número de fila.
-    private static int convertirFilaALetra(char letra) {
-        switch (letra) {
-            case 'a':
-                return 0;
-            case 'b':
-                return 1;
-            case 'c':
-                return 2;
-            case 'd':
-                return 3;
-            case 'e':
-                return 4;
-            case 'f':
-                return 5;
-            case 'g':
-                return 6;
-            case 'h':
-                return 7;
-            case 'i':
-                return 8;
-            case 'j':
-                return 9;
+    // Método para disparar a unas coordenadas dadas en un tablero
+    public static void disparar(char[][] tablero, int col, int fila) {
+        // Comprobar el contenido de la casilla
+        char casilla = tablero[fila][col];
+        switch (casilla) {
+            case AGUA:
+                // Si es agua, marcarla como fallado y mostrar un mensaje
+                tablero[fila][col] = FALLADO;
+                System.out.println("Has fallado. Agua.");
+                break;
+            case TOCADO:
+            case FALLADO:
+                // Si ya está tocado o fallado, mostrar un mensaje de error
+                System.out.println("Ya has disparado a esa casilla. Inténtalo de nuevo.");
+                break;
             default:
-                return -1;
+                // Si es un barco, marcarlo como tocado y mostrar un mensaje
+                tablero[fila][col] = TOCADO;
+                System.out.println("Has tocado un " + nombreBarco(casilla) + ".");
+                // Reducir la flota del jugador correspondiente
+                if (tablero == tablero1) {
+                    flota1--;
+                } else {
+                    flota2--;
+                }
+                // Comprobar si el barco ha sido hundido
+                if (barcoHundido(tablero, col, fila)) {
+                    System.out.println("Has hundido un " + nombreBarco(casilla) + ".");
+                }
+                break;
         }
     }
 
-    // Realiza un turno de juego para un jugador.
-    public static void turnoJugador(char[][] tableroJugador, char[][] barcosJugador) {
-        Scanner sc = new Scanner(System.in);
-
-        while (true) {
-            System.out.println("Introduce la coordenada (A0-J9): ");
-            String coordenada = sc.nextLine();
-
-            int x = convertirFilaALetra(coordenada.charAt(0));
-            int y = convertirCoordenadaANumero(coordenada.charAt(1));
-
-            if (x < 0 || x >= 10 || y < 0 || y >= 10) {
-                System.out.println("Coordenada inválida. Introduce una dentro del rango (A0-J9).");
-                continue;
-            }
-
-            if (barcosJugador[x][y] == '~') {
-                tableroJugador[x][y] = 'O';
-                barcosJugador[x][y] = 'O';
-                System.out.println("Has fallado!");
-            } else if (barcosJugador[x][y] == 'O' || barcosJugador[x][y] == 'X') {
-                System.out.println("Ya has disparado a esa coordenada.");
-            } else {
-                tableroJugador[x][y] = 'X';
-                barcosJugador[x][y] = 'X';
-                System.out.println("Has acertado!");
-            }
-            break;
+    // Método para devolver el nombre de un barco según su tipo
+    public static String nombreBarco(char tipo) {
+        switch (tipo) {
+            case PORTAAVIONES:
+                return "portaaviones";
+            case ACORAZADO:
+                return "acorazado";
+            case DESTRUCTOR:
+                return "destructor";
+            case SUBMARINO:
+                return "submarino";
+            default:
+                return "barco desconocido";
         }
     }
 
-    // Comprueba si un jugador ha ganado.
-    public static boolean comprobarVictoria(char[][] matrizBarcos, int jugador) {
-        boolean victoria = false;
-        int contador = 0;
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (matrizBarcos[i][j] == 'X') {
-                    contador++;
-                }
-            }
+    // Método para comprobar si un barco ha sido hundido
+    public static boolean barcoHundido(char[][] tablero, int col, int fila) {
+        // Obtener el tipo de barco
+        char tipo = tablero[fila][col];
+
+        // Comprobar las casillas adyacentes en las cuatro direcciones
+        // Si hay alguna casilla con el mismo tipo de barco, no está hundido
+        if (col > 0 && tablero[fila][col - 1] == tipo) {
+            return false;
+        }
+        if (col < TAM - 1 && tablero[fila][col + 1] == tipo) {
+            return false;
+        }
+        if (fila > 0 && tablero[fila - 1][col] == tipo) {
+            return false;
+        }
+        if (fila < TAM - 1 && tablero[fila + 1][col] == tipo) {
+            return false;
         }
 
-        // Ajusta la condición de victoria según la configuración de barcos
-        if (jugador == 1) {
-            victoria = contador == 15;   // Jugador 1 tiene 5 barcos (5+4+2*3+2)
-        } else {
-            victoria = contador == 14;   // Jugador 2 tiene 4 barcos (4+3+2*2+2)
-        }
-
-        if (victoria) {
-            System.out.println("El jugador " + jugador + " ha ganado!");
-        }
-        return victoria;
-    }
-
-    // Función principal.
-    public static void main(String[] args) throws Exception {
-
-        char[][] tableroPj1 = new char[10][10];
-        char[][] tableroPj2 = new char[10][10];
-
-        llenarMatrices(tableroPj1);
-        llenarMatrices(tableroPj2);
-
-        mostrarMatrices(tableroPj1, tableroPj2);
-
-        // Colocar barcos
-
-        // **Seleccionar y colocar barcos por nombre**
-
-        // Opciones de barcos
-        String[] opcionesBarcos = {"Portaaviones", "Acorazado", "Destructor", "Submarino"};
-
-        // Barcos restantes para cada jugador
-        int[] barcosDisponiblesPj1 = {1, 1, 2, 1};
-        int[] barcosDisponiblesPj2 = {1, 1, 2, 1};
-
-        for (int jugador = 1; jugador <= 2; jugador++) {
-            System.out.println("Jugador " + jugador + ", ¿qué barcos quieres colocar?");
-            for (int i = 0; i < opcionesBarcos.length; i++) {
-                if (barcosDisponiblesPj1[i] > 0) {
-                    System.out.println(i + 1 + ". " + opcionesBarcos[i] + " (" + barcosDisponiblesPj1[i] + " disponibles)");
-                }
-            }
-
-            boolean colocarBarco = true;
-            while (colocarBarco) {
-                Scanner sc = new Scanner(System.in);
-                System.out.print("Selecciona el barco (introduce el número o 0 para terminar): ");
-                int eleccionBarco = sc.nextInt();
-
-                if (eleccionBarco == 0) {
-                    colocarBarco = false;
-                    break;
-                }
-
-                if (eleccionBarco < 1 || eleccionBarco > opcionesBarcos.length || barcosDisponiblesPj1[eleccionBarco - 1] == 0) {
-                    System.out.println("Opción inválida o barco no disponible.");
-                    continue;
-                }
-
-                // Obtiene la longitud y símbolo del barco elegido
-                int longitudBarco = 0;
-                char simboloBarco = 0;
-                switch (eleccionBarco) {
-                    case 1:
-                        longitudBarco = 5;
-                        simboloBarco = 'P';
-                        break;
-                    case 2:
-                        longitudBarco = 4;
-                        simboloBarco = 'A';
-                        break;
-                    case 3:
-                        longitudBarco = 3;
-                        simboloBarco = 'D';
-                        break;
-                    case 4:
-                        longitudBarco = 2;
-                        simboloBarco = 'S';
-                        break;
-                }
-
-                // Coloca el barco en el tablero del jugador actual
-                colocarBarcos(jugador == 1 ? tableroPj1 : tableroPj2, jugador, longitudBarco, simboloBarco);
-
-                // Reduce la disponibilidad del barco colocado
-                barcosDisponiblesPj1[eleccionBarco - 1]--;
-
-                mostrarMatrices(tableroPj1, tableroPj2);
-            }
-        }
-
-        int turno = 0; // 0 = jugador 1, 1 = jugador 2
-        boolean victoria = false;
-
-        while (!victoria) {
-            if (turno == 0) {
-                System.out.println("Turno del jugador 1");
-                turnoJugador(tableroPj1, tableroPj2);
-                turno = 1;
-                mostrarMatrices(tableroPj1, tableroPj2);
-                victoria = comprobarVictoria(tableroPj2, 1);
-            } else {
-                System.out.println("Turno del jugador 2");
-                turnoJugador(tableroPj2, tableroPj1);
-                turno = 0;
-                mostrarMatrices(tableroPj1, tableroPj2);
-                victoria = comprobarVictoria(tableroPj1, 2);
-            }
-        }
+        // Si no hay ninguna casilla adyacente con el mismo tipo de barco, está hundido
+        return true;
     }
 }

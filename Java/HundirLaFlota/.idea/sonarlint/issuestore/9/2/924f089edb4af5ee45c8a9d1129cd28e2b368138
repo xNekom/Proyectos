@@ -1,56 +1,70 @@
 
-z	java:S135N"YReduce the total number of break and continue statements in this loop to use at most one.(Ì¥Ëıÿÿÿÿÿ8µ¹šĞØ1
-z	java:S1351"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8¶¹šĞØ1
-{	java:S135®"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8¶¹šĞØ1
-v	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ş£ƒ8·¹šĞØ1
-Q
-java:S1066d"/Merge this if statement with the enclosing one.(•ºÄÉşÿÿÿÿ8·¹šĞØ1
-7
-java:S1220""Move this file to a named package.8¼¹šĞØ1
-L	java:S106"+Replace this use of System.out by a logger.(Ç™¯¼úÿÿÿÿ8ÅšĞØ1
-L	java:S106"+Replace this use of System.out by a logger.(íĞé¶üÿÿÿÿ8ÅšĞØ1
-G	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡8ÅšĞØ1
-G	java:S106"+Replace this use of System.out by a logger.(×•œ²8ÅšĞØ1
-G	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡8‘ÅšĞØ1
-L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8‘ÅšĞØ1
-G	java:S106 "+Replace this use of System.out by a logger.(¡Ñú¤8”ÅšĞØ1
-L	java:S106""+Replace this use of System.out by a logger.(µÜ£Öùÿÿÿÿ8•ÅšĞØ1
-G	java:S106$"+Replace this use of System.out by a logger.(×•œ²8–ÅšĞØ1
-G	java:S106%"+Replace this use of System.out by a logger.(¡Ñú¤8–ÅšĞØ1
-L	java:S106'"+Replace this use of System.out by a logger.(‘ÀŞõüÿÿÿÿ8—ÅšĞØ1
-L	java:S106)"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8˜ÅšĞØ1
+f
+java:S6208"CMerge the previous cases into this one using comma-separated label.(Â¯“õÿÿÿÿÿ8åÃåÙ1
+{	java:S135­"YReduce the total number of break and continue statements in this loop to use at most one.(Âô™øÿÿÿÿ8åÃåÙ1
+{	java:S135Æ"YReduce the total number of break and continue statements in this loop to use at most one.(ãÿ¬¿üÿÿÿÿ8åÃåÙ1
+v
+java:S1104"TMake tablero1 a static final constant or non-public and provide accessors if needed.(öÛÂÀıÿÿÿÿ8åÃåÙ1
+q
+java:S1104"TMake tablero2 a static final constant or non-public and provide accessors if needed.(”ïÓ¯8åÃåÙ1
 t
-java:S3776-"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(ùŠú¤ûÿÿÿÿ8™ÅšĞØ1
-L	java:S1062"+Replace this use of System.out by a logger.(¬ùÍüÿÿÿÿ8¤ÅšĞØ1
-L	java:S106;"+Replace this use of System.out by a logger.(üƒèòûÿÿÿÿ8ªÅšĞØ1
-G	java:S106@"+Replace this use of System.out by a logger.(í‹»Ô8«ÅšĞØ1
-L	java:S106D"+Replace this use of System.out by a logger.(Ìåê‹şÿÿÿÿ8«ÅšĞØ1
-G	java:S106H"+Replace this use of System.out by a logger.(×Ã‡‘8®ÅšĞØ1
-G	java:S106v"+Replace this use of System.out by a logger.(ş°ÿö8²ÅšĞØ1
-H	java:S106¯"+Replace this use of System.out by a logger.(™á×’8¼ÅšĞØ1
-M	java:S106¶"+Replace this use of System.out by a logger.(î¤¡êüÿÿÿÿ8ÀÅšĞØ1
-M	java:S106½"+Replace this use of System.out by a logger.(ùÂÜûùÿÿÿÿ8ÁÅšĞØ1
-H	java:S106¿"+Replace this use of System.out by a logger.(Ø¸ÅÈ8ÁÅšĞØ1
-M	java:S106Ã"+Replace this use of System.out by a logger.(Ææ“ˆúÿÿÿÿ8ÃÅšĞØ1
-M	java:S106İ"+Replace this use of System.out by a logger.(ÜüÓ±ùÿÿÿÿ8ÈÅšĞØ1
-u
-java:S3776ã"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ÙØ¤Şıÿÿÿÿ8ÉÅšĞØ1
-k
-java:S1854ö"HRemove this useless assignment to local variable "barcosDisponiblesPj2".(ÆÍÁúúÿÿÿÿ8ÊÅšĞØ1
-c
-java:S1854‡"@Remove this useless assignment to local variable "colocarBarco".(³¯´ÿÿÿÿÿ8ËÅšĞØ1
-
-java:S1130ã"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ8ËÅšĞØ1
-\
-java:S1481ö"9Remove this unused "barcosDisponiblesPj2" local variable.(ÆÍÁúúÿÿÿÿ8ÏÅšĞØ1
-M	java:S106ù"+Replace this use of System.out by a logger.(äá‡œøÿÿÿÿ8ÑÅšĞØ1
-H	java:S106ü"+Replace this use of System.out by a logger.(½éïà8ÓÅšĞØ1
-H	java:S106ƒ"+Replace this use of System.out by a logger.(„ÑğÒ8ÕÅšĞØ1
-M	java:S106Œ"+Replace this use of System.out by a logger.(âéÚØıÿÿÿÿ8ØÅšĞØ1
-?	java:S131“""Add a default case to this switch.(ãì¡á8ÙÅšĞØ1
-M	java:S106µ"+Replace this use of System.out by a logger.(ßª¯üÿÿÿÿ8áÅšĞØ1
-M	java:S106»"+Replace this use of System.out by a logger.(ç–Ûöúÿÿÿÿ8ãÅšĞØ1
-è
-java:S6541-"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 26 to 14, Nesting Level from 6 to 2, Number of Variables from 22 to 6.(ùŠú¤ûÿÿÿÿ8æÅšĞØ1
+java:S1104"RMake flota1 a static final constant or non-public and provide accessors if needed.(åßèœøÿÿÿÿ8åÃåÙ1
+o
+java:S1104"RMake flota2 a static final constant or non-public and provide accessors if needed.(š‘–¹8åÃåÙ1
+p
+java:S1104"NMake sc a static final constant or non-public and provide accessors if needed.(”Ä²ıÿÿÿÿ8ŸåÃåÙ1
+P
+java:S1444".Make this "public static tablero1" field final(öÛÂÀıÿÿÿÿ8ŸåÃåÙ1
+K
+java:S1444".Make this "public static tablero2" field final(”ïÓ¯8ŸåÃåÙ1
+N
+java:S1444",Make this "public static flota1" field final(åßèœøÿÿÿÿ8ŸåÃåÙ1
+I
+java:S1444",Make this "public static flota2" field final(š‘–¹8ŸåÃåÙ1
+J
+java:S1444"(Make this "public static sc" field final(”Ä²ıÿÿÿÿ8ŸåÃåÙ1
+7
+java:S1220""Move this file to a named package.8 åÃåÙ1
+?
+java:S2386"Make this member "protected".(öÛÂÀıÿÿÿÿ8“êÃåÙ1
+:
+java:S2386"Make this member "protected".(”ïÓ¯8“êÃåÙ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Çµí‘8œêÃåÙ1
+L	java:S106""+Replace this use of System.out by a logger.(ÃÛ‚êşÿÿÿÿ8êÃåÙ1
+G	java:S106$"+Replace this use of System.out by a logger.(¢Ô¾„8êÃåÙ1
+L	java:S106."+Replace this use of System.out by a logger.(ßª¯üÿÿÿÿ8ŸêÃåÙ1
+L	java:S1061"+Replace this use of System.out by a logger.(ç–Ûöúÿÿÿÿ8ŸêÃåÙ1
+G	java:S1066"+Replace this use of System.out by a logger.(Òâ¦¦8 êÃåÙ1
+L	java:S106U"+Replace this use of System.out by a logger.(…äëçùÿÿÿÿ8¢êÃåÙ1
+G	java:S106["+Replace this use of System.out by a logger.(ˆÜ…Å8¢êÃåÙ1
+G	java:S106]"+Replace this use of System.out by a logger.(ªÑæÅ8¢êÃåÙ1
+K
+java:S1172b".Remove this unused method parameter "jugador".(ˆè°¾8¤êÃåÙ1
+G	java:S106g"+Replace this use of System.out by a logger.(‡’Œ®8¤êÃåÙ1
+L	java:S106n"+Replace this use of System.out by a logger.(²Á¼Õùÿÿÿÿ8¥êÃåÙ1
+L	java:S106u"+Replace this use of System.out by a logger.(…ºœîûÿÿÿÿ8¦êÃåÙ1
+G	java:S106{"+Replace this use of System.out by a logger.(ÿÁË»8¦êÃåÙ1
+H	java:S106‚"+Replace this use of System.out by a logger.(æÏÁ¶8§êÃåÙ1
+v
+java:S3776Š"SRefactor this method to reduce its Cognitive Complexity from 101 to the 15 allowed.(óà’íüÿÿÿÿ8¨êÃåÙ1
+M	java:S106Œ"+Replace this use of System.out by a logger.(ùÎÃ úÿÿÿÿ8ªêÃåÙ1
+H	java:S106"+Replace this use of System.out by a logger.( éêÑ8«êÃåÙ1
+M	java:S106î"+Replace this use of System.out by a logger.(Ìñ»ıÿÿÿÿ8®êÃåÙ1
+H	java:S106ñ"+Replace this use of System.out by a logger.(ë”İ8®êÃåÙ1
+M	java:S106ö"+Replace this use of System.out by a logger.(õÿéøÿÿÿÿ8®êÃåÙ1
+H	java:S106ş"+Replace this use of System.out by a logger.(×•œ²8°êÃåÙ1
+M	java:S106€"+Replace this use of System.out by a logger.(¾¸ãˆÿÿÿÿÿ8°êÃåÙ1
+M	java:S106‚"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8°êÃåÙ1
+H	java:S106†"+Replace this use of System.out by a logger.(ÚóÇÒ8±êÃåÙ1
+H	java:S106Š"+Replace this use of System.out by a logger.(¼€÷Á8±êÃåÙ1
+H	java:S106Œ"+Replace this use of System.out by a logger.(ĞŸ ó8²êÃåÙ1
+M	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8²êÃåÙ1
+M	java:S106›"+Replace this use of System.out by a logger.(Ô½ùşÿÿÿÿ8³êÃåÙ1
+H	java:S106 "+Replace this use of System.out by a logger.(Ãİ8³êÃåÙ1
+M	java:S106¥"+Replace this use of System.out by a logger.(ë‰š”şÿÿÿÿ8´êÃåÙ1
+M	java:S106®"+Replace this use of System.out by a logger.(Šàİ†ıÿÿÿÿ8´êÃåÙ1
+_
+java:S1126Ô"AReplace this if-then-else statement by a single return statement.(ÆË¡¿8¶êÃåÙ1
 é
-java:S6541ã"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 72 to 64, Complexity from 16 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.(ÙØ¤Şıÿÿÿÿ8æÅšĞØ1
+java:S6541Š"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 89 to 64, Complexity from 41 to 14, Nesting Level from 5 to 2, Number of Variables from 13 to 6.(óà’íüÿÿÿÿ8·êÃåÙ1
