@@ -50,8 +50,8 @@ v
 java:S3776Š"SRefactor this method to reduce its Cognitive Complexity from 110 to the 15 allowed.(óà’íüÿÿÿÿ8¨êÃåÙ1
 M	java:S106Œ"+Replace this use of System.out by a logger.(ùÎÃ úÿÿÿÿ8ªêÃåÙ1
 H	java:S106"+Replace this use of System.out by a logger.( éêÑ8«êÃåÙ1
-M	java:S106˜"+Replace this use of System.out by a logger.(™¢Â‘üÿÿÿÿ8®êÃåÙ1
-H	java:S106›"+Replace this use of System.out by a logger.(Ã«Æš8°êÃåÙ1
+H	java:S106˜"+Replace this use of System.out by a logger.(İú¸ì8®êÃåÙ1
+M	java:S106›"+Replace this use of System.out by a logger.(˜¤åøÿÿÿÿ8°êÃåÙ1
 M	java:S106ı"+Replace this use of System.out by a logger.(Ìñ»ıÿÿÿÿ8°êÃåÙ1
 H	java:S106€"+Replace this use of System.out by a logger.(ë”İ8°êÃåÙ1
 M	java:S106…"+Replace this use of System.out by a logger.(õÿéøÿÿÿÿ8±êÃåÙ1
