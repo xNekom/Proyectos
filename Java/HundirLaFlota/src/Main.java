@@ -141,7 +141,22 @@ public class Main {
         char columna = sc.next().toUpperCase().charAt(0);
         int fila = sc.nextInt();
         System.out.println("Introduce la orientación del barco (0 = horizontal, 1 = vertical):");
-        int orientacion = sc.nextInt();
+        int orientacion = 0; // Inicializamos la variable con un valor por defecto
+        boolean valido = false; // Usamos una variable booleana para controlar el bucle
+        while (!valido) { // Repetimos el bucle hasta que el valor sea válido
+            if (sc.hasNextInt()) { // Comprobamos si el valor que se va a leer es un entero
+                orientacion = sc.nextInt(); // Leemos el entero
+                if (orientacion == 0 || orientacion == 1) { // Comprobamos si el entero es 0 o 1
+                    valido = true; // Si es así, salimos del bucle
+                } else {
+                    System.out.println("La orientación debe ser 0 o 1. Inténtalo de nuevo:"); // Si no, pedimos otro valor
+                }
+            } else { // Si el valor que se va a leer no es un entero
+                System.out.println("La orientación debe ser un entero. Inténtalo de nuevo:"); // Mostramos un mensaje de error
+                sc.next(); // Limpiamos el buffer del scanner
+            }
+        }
+
 
         // Comprobar si las coordenadas y la orientación son válidas
         if (columna >= 'A' && columna <= 'J' && fila >= 1 && fila <= 10 && (orientacion == 0 || orientacion == 1)) {
