@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Discografica.Modelo;
 
-namespace Discografica.Modelo
+public interface IAlbum
 {
-    public interface IAlbum
-    {
-        void AgregarCancion(ICancion cancion);
-        List<ICancion> Canciones { get; }
-    }
+    List<ICancion> Canciones { get; }
+    void AgregarCancion(ICancion cancion);
 }

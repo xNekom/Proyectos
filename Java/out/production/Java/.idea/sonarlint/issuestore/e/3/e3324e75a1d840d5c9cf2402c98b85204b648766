@@ -1,0 +1,56 @@
+
+s	java:S135P"YReduce the total number of break and continue statements in this loop to use at most one.(Ì¥Ëıÿÿÿÿÿ
+s	java:S1353"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+t	java:S135³"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ
+o	java:S135†"YReduce the total number of break and continue statements in this loop to use at most one.(ş£ƒ
+J
+java:S1066f"/Merge this if statement with the enclosing one.(•ºÄÉşÿÿÿÿ
+Á
+java:S1598"¥This file "HundirLaFlota.java" should be located in "java_arrays_bidimensionales" directory, not in "/Users/pedrojuuu/Documents/GitHub/Proyectos/Java/HundirLaFlota".(Üö´õüÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Ç™¯¼úÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(íĞé¶üÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡
+@	java:S106"+Replace this use of System.out by a logger.(×•œ²
+@	java:S106"+Replace this use of System.out by a logger.(ã‰Ï¡
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(¡Ñú¤
+E	java:S106$"+Replace this use of System.out by a logger.(µÜ£Öùÿÿÿÿ
+@	java:S106&"+Replace this use of System.out by a logger.(×•œ²
+@	java:S106'"+Replace this use of System.out by a logger.(¡Ñú¤
+E	java:S106)"+Replace this use of System.out by a logger.(‘ÀŞõüÿÿÿÿ
+E	java:S106+"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+m
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 53 to the 15 allowed.(í†òÇüÿÿÿÿ
+E	java:S1064"+Replace this use of System.out by a logger.(¦Æ›úÿÿÿÿ
+E	java:S106="+Replace this use of System.out by a logger.(üƒèòûÿÿÿÿ
+@	java:S106B"+Replace this use of System.out by a logger.(í‹»Ô
+E	java:S106F"+Replace this use of System.out by a logger.(Ìåê‹şÿÿÿÿ
+@	java:S106J"+Replace this use of System.out by a logger.(×Ã‡‘
+@	java:S106x"+Replace this use of System.out by a logger.(ş°ÿö
+A	java:S106´"+Replace this use of System.out by a logger.(™á×’
+F	java:S106»"+Replace this use of System.out by a logger.(î¤¡êüÿÿÿÿ
+F	java:S106Â"+Replace this use of System.out by a logger.(ùÂÜûùÿÿÿÿ
+A	java:S106Ä"+Replace this use of System.out by a logger.(Ø¸ÅÈ
+F	java:S106È"+Replace this use of System.out by a logger.(Ææ“ˆúÿÿÿÿ
+F	java:S106â"+Replace this use of System.out by a logger.(ÜüÓ±ùÿÿÿÿ
+n
+java:S3776è"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ÙØ¤Şıÿÿÿÿ
+d
+java:S1854û"HRemove this useless assignment to local variable "barcosDisponiblesPj2".(ÆÍÁúúÿÿÿÿ
+\
+java:S1854Œ"@Remove this useless assignment to local variable "colocarBarco".(³¯´ÿÿÿÿÿ
+ˆ
+java:S1130è"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ
+U
+java:S1481û"9Remove this unused "barcosDisponiblesPj2" local variable.(ÆÍÁúúÿÿÿÿ
+F	java:S106ş"+Replace this use of System.out by a logger.(äá‡œøÿÿÿÿ
+A	java:S106"+Replace this use of System.out by a logger.(½éïà
+A	java:S106ˆ"+Replace this use of System.out by a logger.(„ÑğÒ
+F	java:S106‘"+Replace this use of System.out by a logger.(âéÚØıÿÿÿÿ
+8	java:S131˜""Add a default case to this switch.(ãì¡á
+F	java:S106º"+Replace this use of System.out by a logger.(ßª¯üÿÿÿÿ
+F	java:S106À"+Replace this use of System.out by a logger.(ç–Ûöúÿÿÿÿ
+á
+java:S6541/"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 73 to 64, Complexity from 26 to 14, Nesting Level from 6 to 2, Number of Variables from 21 to 6.(í†òÇüÿÿÿÿ
+â
+java:S6541è"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 72 to 64, Complexity from 15 to 14, Nesting Level from 3 to 2, Number of Variables from 15 to 6.(ÙØ¤Şıÿÿÿÿ

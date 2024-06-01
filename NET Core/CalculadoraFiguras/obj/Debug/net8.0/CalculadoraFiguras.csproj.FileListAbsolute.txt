@@ -1,0 +1,15 @@
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/bin/Debug/net8.0/CalculadoraFiguras
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/bin/Debug/net8.0/CalculadoraFiguras.deps.json
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/bin/Debug/net8.0/CalculadoraFiguras.runtimeconfig.json
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/bin/Debug/net8.0/CalculadoraFiguras.dll
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/bin/Debug/net8.0/CalculadoraFiguras.pdb
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.AssemblyInfoInputs.cache
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.AssemblyInfo.cs
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.csproj.CoreCompileInputs.cache
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.sourcelink.json
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.dll
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/refint/CalculadoraFiguras.dll
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.pdb
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/CalculadoraFiguras.genruntimeconfig.cache
+/Users/pedrojuuu/Documents/GitHub/Proyectos/NET Core/CalculadoraFiguras/obj/Debug/net8.0/ref/CalculadoraFiguras.dll

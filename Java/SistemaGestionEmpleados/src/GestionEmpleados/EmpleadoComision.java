@@ -37,8 +37,7 @@ public class EmpleadoComision extends Empleado {
     public void setSalario(double pSalario) {
         if (pSalario < 1080) {
             System.out.println("El SMI es de 1080 €");
-        }
-        else {
+        } else {
             this.salarioBase = pSalario + (pSalario * comision);
         }
     }
@@ -59,7 +58,7 @@ public class EmpleadoComision extends Empleado {
         System.out.println("La comisión es del " + (comision * 100) + "%");
     }
 
-    public void setComision (double pComision) {
+    public void setComision(double pComision) {
         this.comision = pComision;
     }
 }

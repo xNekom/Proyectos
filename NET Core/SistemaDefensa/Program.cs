@@ -1,58 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using SistemaDefensa.Modelo;
 
-    using System;
-    using SistemaDefensa.Modelo;
+namespace SistemaDefensa;
 
-    namespace SistemaDefensa
+internal class Program
+{
+    private static void Main(string[] args)
     {
-        class Program
+        var ejercito = new Ejercito(50000);
+
+        try
         {
-            static void Main(string[] args)
-            {
-                Ejercito ejercito = new Ejercito(50000);
+            var transporte = FabricaUnidadesMilitares.CrearUnidad("Transporte");
+            ejercito.AgregarUnidad(transporte);
 
-                try
-                {
-                    IUnidadMilitar transporte = FabricaUnidadesMilitares.CrearUnidad("Transporte");
-                    ejercito.AgregarUnidad(transporte);
+            var tanqueAtaque = FabricaUnidadesMilitares.CrearUnidad("TanqueAtaque");
+            ejercito.AgregarUnidad(tanqueAtaque);
 
-                    IUnidadMilitar tanqueAtaque = FabricaUnidadesMilitares.CrearUnidad("TanqueAtaque");
-                    ejercito.AgregarUnidad(tanqueAtaque);
+            var transporteRapido = FabricaUnidadesMilitares.CrearUnidad("TransporteRapido");
+            ejercito.AgregarUnidad(transporteRapido);
 
-                    IUnidadMilitar transporteRapido = FabricaUnidadesMilitares.CrearUnidad("TransporteRapido");
-                    ejercito.AgregarUnidad(transporteRapido);
+            var infanteriaBasica = FabricaUnidadesMilitares.CrearUnidad("InfanteriaBasica");
+            ejercito.AgregarUnidad(infanteriaBasica);
 
-                    IUnidadMilitar infanteriaBasica = FabricaUnidadesMilitares.CrearUnidad("InfanteriaBasica");
-                    ejercito.AgregarUnidad(infanteriaBasica);
+            var ametrallador = FabricaUnidadesMilitares.CrearUnidad("Ametrallador");
+            ejercito.AgregarUnidad(ametrallador);
 
-                    IUnidadMilitar ametrallador = FabricaUnidadesMilitares.CrearUnidad("Ametrallador");
-                    ejercito.AgregarUnidad(ametrallador);
+            var sanitario = FabricaUnidadesMilitares.CrearUnidad("Sanitario");
+            ejercito.AgregarUnidad(sanitario);
 
-                    IUnidadMilitar sanitario = FabricaUnidadesMilitares.CrearUnidad("Sanitario");
-                    ejercito.AgregarUnidad(sanitario);
+            var canionAntiaereo = FabricaUnidadesMilitares.CrearUnidad("CanionAntiaereo");
+            ejercito.AgregarUnidad(canionAntiaereo);
 
-                    IUnidadMilitar canionAntiaereo = FabricaUnidadesMilitares.CrearUnidad("CanionAntiaereo");
-                    ejercito.AgregarUnidad(canionAntiaereo);
+            var torpedoMovil = FabricaUnidadesMilitares.CrearUnidad("TorpedoMovil");
+            ejercito.AgregarUnidad(torpedoMovil);
 
-                    IUnidadMilitar torpedoMovil = FabricaUnidadesMilitares.CrearUnidad("TorpedoMovil");
-                    ejercito.AgregarUnidad(torpedoMovil);
-
-                    IUnidadMilitar canon = FabricaUnidadesMilitares.CrearUnidad("Canion");
-                    ejercito.AgregarUnidad(canon);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
-
-                Console.WriteLine($"Cantidad de unidades: {ejercito.CantidadUnidades()}");
-                Console.WriteLine($"Potencia de fuego total: {ejercito.PotenciaFuegoTotal()}");
-                Console.WriteLine($"Blindaje total: {ejercito.BlindajeTotal()}");
-                Console.WriteLine($"Capacidad de movimiento: {ejercito.CapacidadMovimiento()}");
-                Console.WriteLine($"Dinero gastado: {ejercito.DineroGastado()}");
-                Console.WriteLine($"Capacidad militar: {ejercito.CapacidadMilitar()}");
-            }
+            var canon = FabricaUnidadesMilitares.CrearUnidad("Canion");
+            ejercito.AgregarUnidad(canon);
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        Console.WriteLine($"Cantidad de unidades: {ejercito.CantidadUnidades()}");
+        Console.WriteLine($"Potencia de fuego total: {ejercito.PotenciaFuegoTotal()}");
+        Console.WriteLine($"Blindaje total: {ejercito.BlindajeTotal()}");
+        Console.WriteLine($"Capacidad de movimiento: {ejercito.CapacidadMovimiento()}");
+        Console.WriteLine($"Dinero gastado: {ejercito.DineroGastado()}");
+        Console.WriteLine($"Capacidad militar: {ejercito.CapacidadMilitar()}");
     }
+}

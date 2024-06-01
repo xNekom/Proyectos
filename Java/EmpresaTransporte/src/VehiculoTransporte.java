@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 abstract class VehiculoTransporte {
     protected String marca;
     protected String modelo;

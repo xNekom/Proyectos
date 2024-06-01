@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+a
+java:S1854
+"?Remove this useless assignment to local variable "carroGrande".(×ü¡Ñøÿÿÿÿ8í÷¿âÕ1
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(ÈöŞùÿÿÿÿ8ğ÷¿âÕ1
+L	java:S106"+Replace this use of System.out by a logger.(ûÕ¢¯øÿÿÿÿ8ó÷¿âÕ1
+G	java:S106"+Replace this use of System.out by a logger.(¢ç—Â8ó÷¿âÕ1
+L	java:S106 "+Replace this use of System.out by a logger.(¼Áéïşÿÿÿÿ8õ÷¿âÕ1
+G	java:S106""+Replace this use of System.out by a logger.(¾ËØê8÷÷¿âÕ1

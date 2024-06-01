@@ -28,8 +28,7 @@ public class GestorEmpleados {
     public void buscarEmpleados(IEmpleado empleado) {
         if (this.ListaEmpleados.contains(empleado) == true) {
             System.out.println(empleado.mostrarEmpleado());
-        }
-        else {
+        } else {
             System.out.println("No se encontró el empleado");
         }
     }

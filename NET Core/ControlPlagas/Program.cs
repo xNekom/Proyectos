@@ -1,11 +1,10 @@
 ﻿using ControlPlagas.Enum;
 using ControlPlagas.Interface;
 using ControlPlagas.Modelo;
-using System;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         // Crear clientes
         var cliente1 = new Cliente
@@ -55,12 +54,12 @@ class Program
 
         // Crear lista de ITrabajador
         var trabajadores = new List<ITrabajador>
-{
-    jefeEquipo,
-    peon1,
-    peon2,
-    gerente
-};
+        {
+            jefeEquipo,
+            peon1,
+            peon2,
+            gerente
+        };
 
         // Crear equipos
         var equipo1 = new Equipo
@@ -89,10 +88,10 @@ class Program
 
         // Crear lista de IVeneno
         var venenos = new List<IVeneno>
-{
-    veneno1,
-    veneno2
-};
+        {
+            veneno1,
+            veneno2
+        };
 
         // Crear servicios
         var servicio1 = new Servicio

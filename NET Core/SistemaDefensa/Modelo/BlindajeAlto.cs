@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SistemaDefensa.Modelo;
 
-namespace SistemaDefensa.Modelo
+public class BlindajeAlto : IBlindaje
 {
-    public class BlindajeAlto : IBlindaje
+    public BlindajeAlto(double blindaje)
     {
-        public double Blindaje { get; set; }
-
-        public BlindajeAlto(double blindaje)
-        {
-            Blindaje = blindaje;
-        }
+        Blindaje = blindaje;
     }
+
+    public double Blindaje { get; set; }
 }

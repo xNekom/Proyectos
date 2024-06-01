@@ -1,22 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SistemaDefensa.Modelo;
 
-namespace SistemaDefensa.Modelo
+public class Canion : IUnidadMilitar
 {
-    public class Canion : IUnidadMilitar
+    public Canion()
     {
-        public string Nombre { get; set; } = "Cañon";
-        public IVelocidad Velocidad { get; set; } = new VelocidadNula();
-        public IBlindaje Blindaje { get; set; } = new BlindajeNulo();
-        public IPotenciaFuego PotenciaFuego { get; set; }
-        public double Precio { get; set; } = 1100;
-
-        public Canion()
-        {
-            PotenciaFuego = new PotenciaFuegoBaja(14);
-        }
+        PotenciaFuego = new PotenciaFuegoBaja(14);
     }
+
+    public string Nombre { get; set; } = "Cañon";
+    public IVelocidad Velocidad { get; set; } = new VelocidadNula();
+    public IBlindaje Blindaje { get; set; } = new BlindajeNulo();
+    public IPotenciaFuego PotenciaFuego { get; set; }
+    public double Precio { get; set; } = 1100;
 }

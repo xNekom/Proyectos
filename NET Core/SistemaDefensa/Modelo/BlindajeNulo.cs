@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SistemaDefensa.Modelo;
 
-namespace SistemaDefensa.Modelo
+public class BlindajeNulo : IBlindaje
 {
-    public class BlindajeNulo : IBlindaje
-    {
-        public double Blindaje { get; set; } = 0;
-    }
+    public double Blindaje { get; set; } = 0;
 }

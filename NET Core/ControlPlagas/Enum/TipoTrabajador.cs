@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ControlPlagas.Enum;
 
-namespace ControlPlagas.Enum
+public enum TipoTrabajador
 {
-    public enum TipoTrabajador
-    {
-        JefeEquipo,
-        Peon,
-        Gerente
-    }
+    JefeEquipo,
+    Peon,
+    Gerente
 }

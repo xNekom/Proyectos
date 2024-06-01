@@ -30,8 +30,7 @@ public class EmpleadoAsalariado extends Empleado {
     public void setSalario(double pSalario) {
         if (pSalario < 1080) {
             System.out.println("El SMI es de 1080 €");
-        }
-        else {
+        } else {
             this.salarioBase = pSalario;
         }
     }

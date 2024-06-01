@@ -1,28 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Discografica.Modelo;
 
-namespace Discografica.Modelo
+public class Album : IAlbum
 {
-    public class Album : IAlbum
+    public Album(string titulo)
     {
-        private List<ICancion> canciones;
-
-        public Album(string titulo)
-        {
-            canciones = new List<ICancion>();
-        }
-
-        public void AgregarCancion(ICancion cancion)
-        {
-            canciones.Add(cancion);
-        }
-
-        public List<ICancion> Canciones
-        {
-            get { return canciones; }
-        }
+        Canciones = new List<ICancion>();
     }
+
+    public void AgregarCancion(ICancion cancion)
+    {
+        Canciones.Add(cancion);
+    }
+
+    public List<ICancion> Canciones { get; }
 }

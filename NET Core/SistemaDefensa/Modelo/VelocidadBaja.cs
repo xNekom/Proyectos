@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace SistemaDefensa.Modelo;
 
-namespace SistemaDefensa.Modelo
+public class VelocidadBaja : IVelocidad
 {
-    public class VelocidadBaja : IVelocidad
+    public VelocidadBaja(double velocidad)
     {
-        public double Velocidad { get; set; }
-
-        public VelocidadBaja(double velocidad)
-        {
-            Velocidad = velocidad;
-        }
+        Velocidad = velocidad;
     }
+
+    public double Velocidad { get; set; }
 }

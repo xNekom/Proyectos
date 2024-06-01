@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CalculadoraFiguras.Modelo;
 
-namespace CalculadoraFiguras.Modelo
+// Clase Factoría
+public class Factoria : IFactoriaMedibles
 {
-    // Clase Factoría
-    public class Factoria : IFactoriaMedibles
+    public IMedible dameFigura(TipoFigura tipo, int valor)
     {
-        public IMedible dameFigura(TipoFigura tipo, int valor)
+        switch (tipo)
         {
-            switch (tipo)
-            {
-                case TipoFigura.Cuadrado:
-                    return new Cuadrado(valor);
-                case TipoFigura.Circulo:
-                    return new Circulo(valor);
-                default:
-                    throw new ArgumentException("Tipo de figura no válido.");
-            }
+            case TipoFigura.Cuadrado:
+                return new Cuadrado(valor);
+            case TipoFigura.Circulo:
+                return new Circulo(valor);
+            default:
+                throw new ArgumentException("Tipo de figura no válido.");
         }
     }
 }
