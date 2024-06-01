@@ -48,6 +48,10 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
     - Sumar, restar, multiplicar y dividir dos números.
     - Mostrar el resultado en la pantalla.
 
+Aquí está el README de Github actualizado con el nuevo ejercicio de "Sistema de Gestión de Empleados":
+
+Aquí está el README de Github actualizado con el nuevo ejercicio de "Empresa de Transporte":
+
 ## Java ☕
 
 1. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
@@ -61,6 +65,8 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
 10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
 11. **Hundir la Flota (juego)** 🚢: El clásico juego de estrategia en el que los jugadores deben hundir los barcos del rival en un tablero oculto.
+12. **Sistema de Gestión de Empleados** 👨‍💼: Permite registrar, listar y calcular el salario de diferentes tipos de empleados.
+13. **Empresa de Transporte** 🚚: Gestiona la flota de vehículos de transporte de la empresa "Envíos Rápidos".
 
 ## Contribución 🙌
 
