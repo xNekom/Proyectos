@@ -1,6 +1,6 @@
 # Proyecto Multilenguaje 🌐🚀
 
-Este repositorio contiene varios programas desarrollados en diferentes lenguajes. Cada programa tiene un propósito específico y ofrece diferentes funcionalidades. A continuación, se describen brevemente los programas incluidos:
+Este repositorio contiene una variedad de programas desarrollados en diferentes lenguajes de programación, cada uno con un propósito específico y funcionalidades únicas. Aquí encontrarás una descripción detallada de los proyectos incluidos.
 
 ## Java ☕
 
@@ -20,7 +20,7 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 
 ## Proyectos .NET Core 🚀
 
-Colección de proyectos desarrollados con .NET Core.
+Este repositorio también contiene una colección de proyectos desarrollados con .NET Core.
 
 1. **ControlPlagas.API** 🐜
    - Aplicación web para gestionar el control de plagas en diferentes ubicaciones.
@@ -62,39 +62,35 @@ Colección de proyectos desarrollados con .NET Core.
 
 5. **Tic Tac Toe (juego)** 🎮: El clásico juego de tres en raya en el que dos jugadores alternan turnos para marcar casillas en un tablero 3x3. El objetivo es lograr una línea horizontal, vertical o diagonal de sus símbolos (X o O).
 
-
 ## HTML, CSS y JavaScript 🌐💻
 
 1. **Lista de la Compra** 🛒
-
-- **Descripción**: Una aplicación simple que permite al usuario agregar, leer, actualizar y eliminar elementos de una lista de compras. Puedes utilizar esta aplicación para llevar un registro de los artículos que necesitas comprar.
-- **Funcionalidades**:
-    - Agregar un elemento a la lista.
-    - Ver la lista actual de elementos.
-    - Eliminar un artículo de la lista.
+   - Descripción: Una aplicación simple que permite al usuario agregar, leer, actualizar y eliminar elementos de una lista de compras. Puedes utilizar esta aplicación para llevar un registro de los artículos que necesitas comprar.
+   - Funcionalidades:
+     - Agregar un elemento a la lista.
+     - Ver la lista actual de elementos.
+     - Eliminar un artículo de la lista.
 
 2. **Contador de Clicks** 🖱️
-
-- **Descripción**: Un contador de clicks que registra la cantidad de veces que un usuario hace clic en un botón o enlace. Útil para medir la interacción de los usuarios con tu contenido.
-- **Funcionalidades**:
-    - Contar la cantidad de clicks.
-    - Añadir o restar el número de clicks.
+   - Descripción: Un contador de clicks que registra la cantidad de veces que un usuario hace clic en un botón o enlace. Útil para medir la interacción de los usuarios con tu contenido.
+   - Funcionalidades:
+     - Contar la cantidad de clicks.
+     - Añadir o restar el número de clicks.
 
 3. **Formulario Web Estándar** 📝
+   - Descripción: Un formulario básico que permite a los usuarios ingresar información y enviarla a un servidor. Puedes personalizarlo según tus necesidades.
+   - Campos:
+     - Nombre
+     - Email
+     - Contraseña
+     - Mensaje
+     - Género
 
-- **Descripción**: Un formulario básico que permite a los usuarios ingresar información y enviarla a un servidor. Puedes personalizarlo según tus necesidades.
-- **Campos**:
-    - Nombre
-    - Email
-    - Contraseña
-    - Mensaje
-    - Género
- 
 4. **Calculadora Básica Web** 🧮
-- **Descripción**: Una calculadora simple que permite al usuario realizar operaciones matemáticas básicas en una interfaz web.
-- **Funcionalidades**:
-    - Sumar, restar, multiplicar y dividir dos números.
-    - Mostrar el resultado en la pantalla.
+   - Descripción: Una calculadora simple que permite al usuario realizar operaciones matemáticas básicas en una interfaz web.
+   - Funcionalidades:
+     - Sumar, restar, multiplicar y dividir dos números.
+     - Mostrar el resultado en la pantalla.
 
 ## Contribución 🙌
 
@@ -112,4 +108,4 @@ Colección de proyectos desarrollados con .NET Core.
 
 Este proyecto está bajo la **Licencia Pública General de GNU versión 3.0 (GPL-3.0)**. Consulta el archivo LICENSE para más detalles.
 
-¡Gracias por contribuir al proyecto! 🚀👍.
+¡Gracias por contribuir al proyecto! 🚀👍
