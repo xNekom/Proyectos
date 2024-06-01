@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SistemaDefensa.Modelo.Ametrallador" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Ametrallador.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.BlindajeAlto" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\BlindajeAlto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.BlindajeBajo" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\BlindajeBajo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.BlindajeNulo" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\BlindajeNulo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.Canion" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Canion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.CanionAntiaereo" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\CanionAntiaereo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.Ejercito" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAABAAAIBAAAAEAAQIAAABEA=</HashCode>
+      <FileName>Modelo\Ejercito.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.FabricaUnidadesMilitares">
+    <Position X="17.5" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAABAAAAABAAgAAAAAAAIABBAAAAAAAAQAQAA=</HashCode>
+      <FileName>Modelo\FabricaUnidadesMilitares.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.InfanteriaBasica" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\InfanteriaBasica.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.PotenciaFuegoAlta" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\PotenciaFuegoAlta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.PotenciaFuegoBaja" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\PotenciaFuegoBaja.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.PotenciaFuegoNula" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\PotenciaFuegoNula.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.Sanitario" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Sanitario.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.TanqueAtaque" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\TanqueAtaque.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.TorpedoMovil" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\TorpedoMovil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.Transporte" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\Transporte.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.TransporteRapido" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\TransporteRapido.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.VelocidadAlta" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\VelocidadAlta.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.VelocidadBaja" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\VelocidadBaja.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.VelocidadMedia" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\VelocidadMedia.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SistemaDefensa.Modelo.VelocidadNula" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\VelocidadNula.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="SistemaDefensa.Modelo.IBlindaje">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\IBlindaje.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SistemaDefensa.Modelo.IEjercito">
+    <Position X="12.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAABAAAAEAAQIAAABEA=</HashCode>
+      <FileName>Modelo\IEjercito.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SistemaDefensa.Modelo.IPotenciaFuego">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\IPotenciaFuego.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SistemaDefensa.Modelo.IUnidadMilitar">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAgAQQACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\IUnidadMilitar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SistemaDefensa.Modelo.IVelocidad">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Modelo\IVelocidad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
