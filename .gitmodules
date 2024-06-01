@@ -1,0 +1,3 @@
+[submodule "ClasesNET"]
+	path = ClasesNET
+	url = git@github.com:xNekom/ClasesNET.git
