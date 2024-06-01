@@ -2,6 +2,54 @@
 
 Este repositorio contiene varios programas desarrollados en diferentes lenguajes. Cada programa tiene un propósito específico y ofrece diferentes funcionalidades. A continuación, se describen brevemente los programas incluidos:
 
+## Java ☕
+
+1. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
+2. **Calculadora Sencilla** 🧮: Realiza operaciones matemáticas básicas.
+3. **Juego Cámara Secreta** 🔍: Un juego de adivinanza en el que los jugadores deben adivinar un número secreto.
+4. **Aplicación de Campeonato de Programación** 🏆: Gestiona información sobre competiciones de programación y participantes.
+5. **Juego Coliseo Romano** ⚔️: Simula batallas en el antiguo Coliseo Romano.
+6. **Lotería** 🎰: Genera números aleatorios para un sorteo de lotería.
+7. **Juego Mastermind** 🧩: El clásico juego de lógica en el que los jugadores deben adivinar una combinación secreta.
+8. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
+9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
+10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
+11. **Hundir la Flota (juego)** 🚢: El clásico juego de estrategia en el que los jugadores deben hundir los barcos del rival en un tablero oculto.
+12. **Sistema de Gestión de Empleados** 👨‍💼: Permite registrar, listar y calcular el salario de diferentes tipos de empleados.
+13. **Empresa de Transporte** 🚚: Gestiona la flota de vehículos de transporte de la empresa "Envíos Rápidos".
+
+## Proyectos .NET Core 🚀
+
+Colección de proyectos desarrollados con .NET Core.
+
+1. **ControlPlagas.API** 🐜
+   - Aplicación web para gestionar el control de plagas en diferentes ubicaciones.
+   - Funcionalidades: registro y autenticación de usuarios, gestión de ubicaciones, informes de control de plagas, seguimiento de actividades, generación de informes, notificaciones, integración con sistemas externos.
+   - Tecnologías: .NET Core, Entity Framework Core, ASP.NET Core, Angular, JWT.
+
+2. **CalculadoraFiguras** 📐
+   - Aplicación que permite calcular la superficie y el perímetro de figuras geométricas.
+   - Implementa una jerarquía de objetos medibles utilizando una interfaz `IMedible`.
+   - Incluye clases para cuadrados y círculos, y una clase `Factoría` para crear las figuras.
+   - Tecnologías: .NET Core
+
+3. **Discografica** 🎶
+   - Sistema de gestión de una discográfica.
+   - Permite registrar artistas, álbumes, canciones y ventas.
+   - Genera informes sobre ventas, artistas más populares, etc.
+   - Tecnologías: .NET Core
+
+4. **GestionVentasOrdenadores** 💻
+   - Aplicación para gestionar las ventas de ordenadores en una tienda.
+   - Permite registrar clientes, ordenadores, ventas y generar informes.
+   - Tecnologías: .NET Core
+
+5. **SistemaDefensa** 🛡️
+   - Aplicación para simular un sistema de defensa contra ataques.
+   - Incluye diferentes tipos de armas, escudos y estrategias de defensa.
+   - Permite enfrentar a diferentes enemigos y evaluar la efectividad del sistema.
+   - Tecnologías: .NET Core
+
 ## Python 🐍
 
 1. **Aplicación de Notas** 📝: Una aplicación de consola que permite a los usuarios registrarse, iniciar sesión y guardar sus notas en una base de datos.
@@ -47,26 +95,6 @@ Este repositorio contiene varios programas desarrollados en diferentes lenguajes
 - **Funcionalidades**:
     - Sumar, restar, multiplicar y dividir dos números.
     - Mostrar el resultado en la pantalla.
-
-Aquí está el README de Github actualizado con el nuevo ejercicio de "Sistema de Gestión de Empleados":
-
-Aquí está el README de Github actualizado con el nuevo ejercicio de "Empresa de Transporte":
-
-## Java ☕
-
-1. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
-2. **Calculadora Sencilla** 🧮: Realiza operaciones matemáticas básicas.
-3. **Juego Cámara Secreta** 🔍: Un juego de adivinanza en el que los jugadores deben adivinar un número secreto.
-4. **Aplicación de Campeonato de Programación** 🏆: Gestiona información sobre competiciones de programación y participantes.
-5. **Juego Coliseo Romano** ⚔️: Simula batallas en el antiguo Coliseo Romano.
-6. **Lotería** 🎰: Genera números aleatorios para un sorteo de lotería.
-7. **Juego Mastermind** 🧩: El clásico juego de lógica en el que los jugadores deben adivinar una combinación secreta.
-8. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
-9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
-10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
-11. **Hundir la Flota (juego)** 🚢: El clásico juego de estrategia en el que los jugadores deben hundir los barcos del rival en un tablero oculto.
-12. **Sistema de Gestión de Empleados** 👨‍💼: Permite registrar, listar y calcular el salario de diferentes tipos de empleados.
-13. **Empresa de Transporte** 🚚: Gestiona la flota de vehículos de transporte de la empresa "Envíos Rápidos".
 
 ## Contribución 🙌
 
