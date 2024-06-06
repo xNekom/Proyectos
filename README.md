@@ -1,107 +1,147 @@
 # Proyecto Multilenguaje 🌐🚀
 
-Este repositorio contiene una variedad de programas desarrollados en diferentes lenguajes de programación, cada uno con un propósito específico y funcionalidades únicas. Aquí encontrarás una descripción detallada de los proyectos incluidos.
+Este repositorio contiene una variedad de programas desarrollados en diferentes lenguajes de programación, destacando la diversidad y funcionalidad única de cada proyecto. Aquí encontrarás una descripción detallada y organizada de los proyectos incluidos, agrupados por lenguaje de programación.
+
+## Contenido
+
+- [Java ☕](#java-)
+- [.NET Core y C# 🚀](#net-core-y-c-)
+- [Python 🐍](#python-)
+- [HTML, CSS y JavaScript 🌐💻](#html-css-y-javascript-)
+- [Licencia 📄](#licencia-)
+
+---
 
 ## Java ☕
 
-1. **Conversor de Binario a Decimal** 🔢: Convierte números binarios a su equivalente decimal.
-2. **Calculadora Sencilla** 🧮: Realiza operaciones matemáticas básicas.
-3. **Juego Cámara Secreta** 🔍: Un juego de adivinanza en el que los jugadores deben adivinar un número secreto.
-4. **Aplicación de Campeonato de Programación** 🏆: Gestiona información sobre competiciones de programación y participantes.
-5. **Juego Coliseo Romano** ⚔️: Simula batallas en el antiguo Coliseo Romano.
-6. **Lotería** 🎰: Genera números aleatorios para un sorteo de lotería.
-7. **Juego Mastermind** 🧩: El clásico juego de lógica en el que los jugadores deben adivinar una combinación secreta.
-8. **Juego Número Secreto** 🔢: Similar al juego de Cámara Secreta, pero con diferentes reglas.
-9. **Cola de Supermercado** 🛒: Simula la gestión de una cola de clientes en un supermercado.
-10. **Ventanilla de Banco** 💰: Gestiona transacciones bancarias en una ventanilla.
-11. **Hundir la Flota (juego)** 🚢: El clásico juego de estrategia en el que los jugadores deben hundir los barcos del rival en un tablero oculto.
-12. **Sistema de Gestión de Empleados** 👨‍💼: Permite registrar, listar y calcular el salario de diferentes tipos de empleados.
-13. **Empresa de Transporte** 🚚: Gestiona la flota de vehículos de transporte de la empresa "Envíos Rápidos".
+Proyectos en Java que abarcan desde juegos hasta aplicaciones de gestión:
+
+1. **Conversor de Binario a Decimal** 🔢: 
+   - **Descripción:** Convierte números binarios a su equivalente decimal.
+
+2. **Calculadora Sencilla** 🧮: 
+   - **Descripción:** Realiza operaciones matemáticas básicas.
+
+3. **Juego Cámara Secreta** 🔍: 
+   - **Descripción:** Adivina un número secreto para ganar.
+
+4. **Aplicación de Campeonato de Programación** 🏆: 
+   - **Descripción:** Gestiona competiciones y participantes en eventos de programación.
+
+5. **Juego Coliseo Romano** ⚔️: 
+   - **Descripción:** Simula batallas en el antiguo Coliseo Romano.
+
+6. **Lotería** 🎰: 
+   - **Descripción:** Genera números aleatorios para un sorteo de lotería.
+
+7. **Juego Mastermind** 🧩: 
+   - **Descripción:** El clásico juego de lógica para adivinar combinaciones secretas.
+
+8. **Juego Número Secreto** 🔢: 
+   - **Descripción:** Versión alternativa del juego de adivinanza de números.
+
+9. **Cola de Supermercado** 🛒: 
+   - **Descripción:** Simula la gestión de una cola de clientes en un supermercado.
+
+10. **Ventanilla de Banco** 💰: 
+   - **Descripción:** Gestiona transacciones bancarias en una ventanilla virtual.
+
+11. **Hundir la Flota (juego)** 🚢: 
+   - **Descripción:** Estrategia y táctica en el clásico juego de batalla naval.
+
+12. **Sistema de Gestión de Empleados** 👨‍💼: 
+   - **Descripción:** Administra el registro y salario de empleados.
+
+13. **Empresa de Transporte** 🚚: 
+   - **Descripción:** Gestiona una flota de vehículos de transporte.
+
+---
 
 ## .NET Core y C# 🚀
 
-Este repositorio también contiene una colección de proyectos desarrollados con .NET Core y el lenguaje de programación C#.
+Explora una serie de proyectos que utilizan .NET Core y C# para diversas aplicaciones:
 
-1. **ControlPlagas.API** 🐜
-   - Aplicación web para gestionar el control de plagas en diferentes ubicaciones.
-   - Funcionalidades: registro y autenticación de usuarios, gestión de ubicaciones, informes de control de plagas, seguimiento de actividades, generación de informes, notificaciones, integración con sistemas externos.
-   - Tecnologías: .NET Core, C#, Entity Framework Core, ASP.NET Core, Angular, JWT.
+1. **ControlPlagas.API** 🐜:
+   - **Descripción:** Gestiona el control de plagas con una aplicación web.
+   - **Funcionalidades:** Registro y autenticación de usuarios, gestión de ubicaciones, informes de control, seguimiento de actividades, generación de reportes, notificaciones, integración con sistemas externos.
 
-2. **CalculadoraFiguras** 📐
-   - Aplicación que permite calcular la superficie y el perímetro de figuras geométricas.
-   - Implementa una jerarquía de objetos medibles utilizando una interfaz `IMedible` en C#.
-   - Incluye clases para cuadrados y círculos, y una clase `Factoria` para crear las figuras.
-   - Tecnologías: .NET Core, C#
+2. **CalculadoraFiguras** 📐:
+   - **Descripción:** Calcula la superficie y el perímetro de figuras geométricas.
+   - **Funcionalidades:** Implementación de una jerarquía de objetos medibles, creación de figuras usando una fábrica de objetos.
 
-3. **Discografica** 🎶
-   - Sistema de gestión de una discográfica.
-   - Permite registrar artistas, álbumes, canciones y ventas.
-   - Genera informes sobre ventas, artistas más populares, etc.
-   - Tecnologías: .NET Core, C#
+3. **Discografica** 🎶:
+   - **Descripción:** Sistema de gestión de una discográfica.
+   - **Funcionalidades:** Registro de artistas, álbumes, canciones, ventas y generación de informes sobre ventas y popularidad de artistas.
 
-4. **GestionVentasOrdenadores** 💻
-   - Aplicación para gestionar las ventas de ordenadores en una tienda.
-   - Permite registrar clientes, ordenadores, ventas y generar informes.
-   - Tecnologías: .NET Core, C#
+4. **GestionVentasOrdenadores** 💻:
+   - **Descripción:** Aplicación para gestionar las ventas de ordenadores en una tienda.
+   - **Funcionalidades:** Registro de clientes, ordenadores, ventas y generación de informes para analizar las tendencias de ventas.
 
-5. **SistemaDefensa** 🛡️
-   - Aplicación para simular un sistema de defensa contra ataques.
-   - Incluye diferentes tipos de armas, escudos y estrategias de defensa.
-   - Permite enfrentar a diferentes enemigos y evaluar la efectividad del sistema.
-   - Tecnologías: .NET Core, C#
+5. **SistemaDefensa** 🛡️:
+   - **Descripción:** Simula un sistema de defensa contra ataques.
+   - **Funcionalidades:** Incluye diferentes tipos de armas, escudos y estrategias de defensa para enfrentar a diversos enemigos y evaluar la efectividad del sistema.
+
+---
 
 ## Python 🐍
 
-1. **Aplicación de Notas** 📝: Una aplicación de consola que permite a los usuarios registrarse, iniciar sesión y guardar sus notas en una base de datos.
-2. **Snake (juego)** 🐍: El clásico juego de la serpiente en el que controlas una serpiente que debe comer manzanas para crecer y evitar chocar contra las paredes o su propio cuerpo.
-3. **Piedra, Papel o Tijera (juego)** ✊✋✌️: Un juego simple en el que dos jugadores eligen entre piedra, papel o tijera, y se determina quién gana según las reglas del juego.
-4. **Generador de Contraseñas** 🔐: Un programa que genera contraseñas aleatorias con diferentes niveles de complejidad (longitud, caracteres especiales, números, etc.).
-5. **Tic Tac Toe (juego)** 🎮: El clásico juego de tres en raya en el que dos jugadores alternan turnos para marcar casillas en un tablero 3x3. El objetivo es lograr una línea horizontal, vertical o diagonal de sus símbolos (X o O).
+Proyectos en Python que van desde juegos hasta aplicaciones útiles para el día a día:
+
+1. **Aplicación de Notas** 📝: 
+   - **Descripción:** Permite a los usuarios registrarse, iniciar sesión y guardar sus notas en una base de datos.
+
+2. **Snake (juego)** 🐍: 
+   - **Descripción:** El clásico juego de la serpiente donde se debe comer manzanas para crecer y evitar chocar.
+
+3. **Piedra, Papel o Tijera (juego)** ✊✋✌️: 
+   - **Descripción:** Juego simple donde dos jugadores eligen entre piedra, papel o tijera para determinar el ganador.
+
+4. **Generador de Contraseñas** 🔐: 
+   - **Descripción:** Genera contraseñas aleatorias con diferentes niveles de complejidad, incluyendo longitud y caracteres especiales.
+
+5. **Tic Tac Toe (juego)** 🎮: 
+   - **Descripción:** El clásico juego de tres en raya donde dos jugadores alternan turnos para marcar casillas en un tablero 3x3.
+
+---
 
 ## HTML, CSS y JavaScript 🌐💻
 
-1. **Lista de la Compra** 🛒
-   - Descripción: Una aplicación simple que permite al usuario agregar, leer, actualizar y eliminar elementos de una lista de compras. Puedes utilizar esta aplicación para llevar un registro de los artículos que necesitas comprar.
-   - Funcionalidades:
+Explora proyectos que utilizan tecnologías web para crear aplicaciones interactivas:
+
+1. **Lista de la Compra** 🛒:
+   - **Descripción:** Una aplicación simple para manejar una lista de compras, permitiendo agregar, leer, actualizar y eliminar elementos.
+   - **Funcionalidades:**
      - Agregar un elemento a la lista.
      - Ver la lista actual de elementos.
      - Eliminar un artículo de la lista.
 
-2. **Contador de Clicks** 🖱️
-   - Descripción: Un contador de clicks que registra la cantidad de veces que un usuario hace clic en un botón o enlace. Útil para medir la interacción de los usuarios con tu contenido.
-   - Funcionalidades:
+2. **Contador de Clicks** 🖱️:
+   - **Descripción:** Un contador que registra la cantidad de veces que un usuario hace clic en un botón o enlace.
+   - **Funcionalidades:**
      - Contar la cantidad de clicks.
      - Añadir o restar el número de clicks.
 
-3. **Formulario Web Estándar** 📝
-   - Descripción: Un formulario básico que permite a los usuarios ingresar información y enviarla a un servidor. Puedes personalizarlo según tus necesidades.
-   - Campos:
+3. **Formulario Web Estándar** 📝:
+   - **Descripción:** Un formulario básico para recoger información del usuario y enviarla a un servidor.
+   - **Campos:**
      - Nombre
      - Email
      - Contraseña
      - Mensaje
      - Género
 
-4. **Calculadora Básica Web** 🧮
-   - Descripción: Una calculadora simple que permite al usuario realizar operaciones matemáticas básicas en una interfaz web.
-   - Funcionalidades:
+4. **Calculadora Básica Web** 🧮:
+   - **Descripción:** Una calculadora simple que permite realizar operaciones matemáticas básicas como suma, resta, multiplicación y división.
+   - **Funcionalidades:**
      - Sumar, restar, multiplicar y dividir dos números.
      - Mostrar el resultado en la pantalla.
 
-## Contribución 🙌
-
-¡Agradecemos las contribuciones! Si deseas colaborar, sigue estos pasos:
-
-1. Haz un fork de este repositorio.
-2. Crea una nueva rama para tu función o corrección de errores.
-3. Envía un pull request con tus cambios.
-
-## Autores ✒️
-
-- @xNekom - Desarrollo inicial y mantenimiento.
+---
 
 ## Licencia 📄
 
-Este proyecto está bajo la **Licencia Pública General de GNU versión 3.0 (GPL-3.0)**. Consulta el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo la **Licencia Pública General de GNU versión 3.0 (GPL-3.0)**. Consulta el archivo `LICENSE` en este repositorio para más detalles.
 
-¡Gracias por contribuir al proyecto! 🚀👍
+---
+
+Gracias por visitar y contribuir a este proyecto multilenguaje! 🚀👍
