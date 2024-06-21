@@ -82,7 +82,7 @@ Explora una serie de proyectos que utilizan .NET Core y C# para diversas aplicac
    - **Funcionalidades:** Incluye diferentes tipos de armas, escudos y estrategias de defensa para enfrentar a diversos enemigos y evaluar la efectividad del sistema.
   
 6. **UnitTest** 🧪:
-   -**Descripción:** En base a unas clases de figuras geométricas y vehículos se crean UnitTest para comprobar su funcionamiento.
+   - **Descripción:** En base a unas clases de figuras geométricas y vehículos se crean UnitTest para comprobar su funcionamiento.
 
 ---
 
