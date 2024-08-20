@@ -55,6 +55,9 @@ Proyectos en Java que abarcan desde juegos hasta aplicaciones de gestión:
 13. **Empresa de Transporte** 🚚: 
    - **Descripción:** Gestiona una flota de vehículos de transporte.
 
+14. **Máquina Expendedora** 🥤:
+   - **Descripción:** Simula el funcionamiento de una máquina expendedora, permitiendo seleccionar productos, insertar monedas y recibir cambio. 
+
 ---
 
 ## .NET Core y C# 🚀
