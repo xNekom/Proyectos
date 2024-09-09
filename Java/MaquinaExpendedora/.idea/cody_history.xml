@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatHistory">
+    <accountData>
+      <list>
+        <AccountData>
+          <accountId value="VXNlcjo1NTM2OTI=" />
+          <chats>
+            <list>
+              <chat>
+                <internalId value="51c8bc22-889d-4c04-a26b-bfdab506d3c4" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="Genera los unitTest" />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="Claro, estaré encantado de ayudarte a generar los unit tests. Sin embargo, para poder crear tests unitarios efectivos, necesito más información:&#10;&#10;1. ¿Qué código o función específica quieres probar?&#10;2. ¿En qué lenguaje de programación estás trabajando?&#10;3. ¿Hay algún framework de testing específico que prefieras usar (por ejemplo, JUnit para Java, pytest para Python, etc.)?&#10;4. ¿Tienes algún requerimiento específico para los tests?&#10;&#10;Una vez que me proporciones esta información, podré ayudarte a generar los unit tests apropiados. Por favor, comparte el código que quieres probar o describe la funcionalidad que necesitas testear, y estaré encantado de ayudarte." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-08-26T14:41:15.782694" />
+              </chat>
+            </list>
+          </chats>
+          <defaultLlm>
+            <llm>
+              <model value="anthropic/claude-3-5-sonnet-20240620" />
+              <provider value="Anthropic" />
+              <tags>
+                <list>
+                  <option value="gateway" />
+                  <option value="accuracy" />
+                  <option value="recommended" />
+                  <option value="free" />
+                </list>
+              </tags>
+              <title value="Claude 3.5 Sonnet" />
+              <usage>
+                <list>
+                  <option value="chat" />
+                  <option value="edit" />
+                </list>
+              </usage>
+            </llm>
+          </defaultLlm>
+        </AccountData>
+      </list>
+    </accountData>
+  </component>
+</project>
